@@ -1,0 +1,10 @@
+[user]
+	name = James Martinez
+	email = jamescmartinez@gmail.com
+
+[alias]
+	co = checkout
+	c = commit
+	s = status
+	b = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
