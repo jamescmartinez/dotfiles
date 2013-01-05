@@ -11,3 +11,6 @@
 
 [color]
 	diff = true
+
+[difftool]
+	prompt = false
