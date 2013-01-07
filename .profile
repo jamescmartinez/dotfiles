@@ -10,8 +10,6 @@ alias sp="source ~/.profile"
 alias toutpodcache="sh ~/Development/Scripts/48e31b2f4c87fbd5e73f/updatecpcaches.sh"
 
 # Git
-alias gits="git status"
-alias gitl="git hist"
 alias gl='git hist'
 alias gs='git status '
 alias ga='git add '
