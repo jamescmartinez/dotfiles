@@ -3,7 +3,6 @@ export PATH=/usr/local/bin:$HOME/.rvm/bin:~/Development/android-sdk-macosx/tools
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # Aliases
-
 alias sp="source ~/.profile"
 
 # Cocoapods 
