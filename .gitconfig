@@ -8,7 +8,7 @@
 	b = branch
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [color]
-	diff = true
+	ui = true
 [difftool]
 	prompt = false
 [push]
