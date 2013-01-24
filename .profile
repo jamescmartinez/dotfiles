@@ -5,9 +5,6 @@ export PATH=/usr/local/bin:$HOME/.rvm/bin:~/Development/android-sdk-macosx/tools
 # Aliases
 alias sp="source ~/.profile"
 
-# Cocoapods 
-alias toutpodcache="sh ~/Development/Scripts/48e31b2f4c87fbd5e73f/updatecpcaches.sh"
-
 # Git
 alias gl='git hist'
 alias gs='git status '
