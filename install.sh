@@ -8,7 +8,7 @@ olddir=~/dotfiles_old # old dotfiles backup directory
 files=".gitconfig .gitignore .profile .zprofile .zshrc" # list of files/folders to symlink in homedir
 
 # create dotfiles_old in homedir
-echo "Creating $olddir for backup of any existing dotfiles in ~/..."
+echo "Creating $olddir to backu any existing dotfiles in ~/..."
 mkdir -p $olddir
 
 # change to the dotfiles directory
