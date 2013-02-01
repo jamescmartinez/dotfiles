@@ -2,13 +2,12 @@
 	name = James Martinez
 	email = jamescmartinez@gmail.com
 [alias]
-	co = checkout
-	c = commit
-	s = status
-	b = branch
+	amend = commit --amend -C HEAD
+	undo = reset --soft HEAD^
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	s = status
 [color]
-	ui = true
+	ui = 1
 [difftool]
 	prompt = false
 [push]
@@ -17,3 +16,7 @@
 	tool = kdiff3
 [core]
 	excludesfile = ~/.gitignore
+[help]
+	autocorrect = 1
+[rerere]
+	enabled = 1
