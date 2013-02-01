@@ -3,14 +3,12 @@
 
 _For my Mac Setup guide, click [here](https://gist.github.com/4390891)._
 
-This repository includes all of my custom dotfiles. They should be cloned to
-your home directory so that the path is `~/dotfiles/`. The included install
-script creates symlinks from your home directory to the files which are located
-in `~/dotfiles/`.
+This repository includes all of my custom dotfiles. This repository should be cloned to
+your home directory so that the path is `~/dotfiles/`. The included installation
+script creates symlinks from the dotfiles in your home directory to the dotfiles in the `~/dotfiles/` directory.
 
-The setup script is smart enough to back up your existing dotfiles into a
-`~/dotfiles_old/` directory if you already have any dotfiles of the same name as
-the dotfile symlinks being created in your home directory.
+The installation script will backup your existing dotfiles into the
+`~/dotfiles_old/` directory.
 
 Installation
 ------------
