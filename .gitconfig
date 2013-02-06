@@ -17,6 +17,6 @@
 [core]
 	excludesfile = ~/.gitignore
 [help]
-	autocorrect = 1
+	autocorrect = 50
 [rerere]
 	enabled = 1
