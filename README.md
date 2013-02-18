@@ -18,3 +18,8 @@ git clone git://github.com/jamescmartinez/dotfiles ~/dotfiles
 cd ~/dotfiles
 ./install.sh
 ```
+
+Adding a File to `dotfiles`
+------------
+
+When adding a file to `dotfiles`, don't forget to add it to the installation script.
