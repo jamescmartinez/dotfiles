@@ -5,3 +5,4 @@ export PATH=/usr/local/bin:$HOME/.rvm/bin:~/Development/android-sdk-macosx/tools
 # Aliases
 alias sp="source ~/.profile"
 alias git=hub
+alias vi=mvim
