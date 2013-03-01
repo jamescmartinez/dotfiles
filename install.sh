@@ -21,4 +21,11 @@ for file in $files; do
 	echo "Creating symlink to $file in home directory..."
 	ln -s $dir/$file ~/.$file
 done
+
+echo "Adding submodules..."
+git submodule update --init
+
+echo "Installing Vundle bundles..."
+vim +BundleInstall +qall
+
 echo "...done."
