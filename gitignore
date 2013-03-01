@@ -3,3 +3,4 @@
 *.lock
 
 .netrwhist
+vim/bundle/
