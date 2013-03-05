@@ -11,3 +11,8 @@ set background=dark
 colorscheme solarized
 set number
 set guifont=Monaco:h14
+
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
