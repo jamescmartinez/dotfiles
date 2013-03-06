@@ -26,11 +26,10 @@ task :backup do
   end
 
   unless File.directory?(olddir)
-    puts "ERROR: No dotfiles were backed up because no dotfiles were found."
-    exit
+    puts "WARNING: No dotfiles were backed up because no dotfiles were found."
+  else
+    puts "All dotfiles that will be replaced have been moved to the " + @olddir + " directory."
   end
-
-  puts "All dotfiles that will be replaced have been moved to the " + @olddir + " directory."
 end
 
 task :install do
