@@ -2,6 +2,8 @@ export PATH=/usr/local/bin:$HOME/.rvm/bin:~/Development/android-sdk-macosx/tools
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
+set -o vi
+
 # Aliases
 alias sp="source ~/.profile"
 alias git=hub
