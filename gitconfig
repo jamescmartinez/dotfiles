@@ -16,6 +16,7 @@
 	tool = kdiff3
 [core]
 	excludesfile = ~/.gitignore
+	whitespace = trailing-space,space-before-tab
 [help]
 	autocorrect = 50
 [rerere]
