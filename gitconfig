@@ -21,3 +21,5 @@
 	autocorrect = 50
 [rerere]
 	enabled = 1
+[color "diff"]
+	whitespace = blue reverse
