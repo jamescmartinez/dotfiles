@@ -13,7 +13,7 @@
 [push]
 	default = simple
 [merge]
-	tool = kdiff3
+	tool = Kaleidoscope
 [core]
 	excludesfile = ~/.gitignore
 	whitespace = trailing-space,space-before-tab
@@ -26,3 +26,11 @@
 	whitespace = blue reverse
 [mergetool]
 	keepBackup = false
+	prompt = false
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
