@@ -1,36 +1,44 @@
 [user]
 	name = James Martinez
 	email = jamescmartinez@gmail.com
+
 [alias]
 	amend = commit --amend -C HEAD
 	undo = reset --soft HEAD^
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	s = status
-[color]
-	ui = 1
-[difftool]
-	prompt = false
-[push]
-	default = simple
-[merge]
-	tool = Kaleidoscope
+
 [core]
 	excludesfile = ~/.gitignore
 	whitespace = trailing-space,space-before-tab
 	editor = mvim -f
-[help]
-	autocorrect = 50
-[rerere]
-	enabled = 1
+
+[color]
+	ui = 1
 [color "diff"]
 	whitespace = blue reverse
+
+[merge]
+	tool = Kaleidoscope
 [mergetool]
 	keepBackup = false
 	prompt = false
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[diff]
-	tool = Kaleidoscope
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
+
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[push]
+	default = simple
+
+[help]
+	autocorrect = 50
+
+[rerere]
+	enabled = 1
