@@ -24,3 +24,5 @@
 	enabled = 1
 [color "diff"]
 	whitespace = blue reverse
+[mergetool]
+	keepBackup = false
