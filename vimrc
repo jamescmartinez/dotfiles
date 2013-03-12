@@ -37,7 +37,12 @@ let NERDTreeMouseMode=2
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.pyc','\~$','\.swo$','\.swp$','\.git','\.hg','\.svn','\.bzr']
 let NERDTreeKeepTreeInNewTab=1
-let g:nerdtree_tabs_open_on_gui_startup=0 
+let g:nerdtree_tabs_open_on_gui_startup=0
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+function! CursorRight()
+    exe "normal \<c-w>\<c-w>"
+endfunction
+autocmd vimenter * call CursorRight()
 
 " Color Scheme
 set background=dark
