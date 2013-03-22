@@ -10,6 +10,5 @@ export PATH=/usr/local/bin:$HOME/.rvm/bin:~/Development/android-sdk-macosx/tools
 bindkey -v
 
 # Aliases
-alias sp="source ~/.profile"
 alias git=hub
 alias vi=mvim
