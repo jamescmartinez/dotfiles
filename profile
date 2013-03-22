@@ -2,7 +2,9 @@ export PATH=/usr/local/bin:$HOME/.rvm/bin:~/Development/android-sdk-macosx/tools
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
+# Vim keybindings
 set -o vi
+bindkey -v
 
 # Aliases
 alias sp="source ~/.profile"
