@@ -1,7 +1,7 @@
 require "fileutils"
 
 @olddir = "~/dotfiles_old"
-@files = ["gitconfig", "gitignore", "profile", "zprofile", "zshrc", "vim", "vimrc", "gemrc"]
+@files = ["gitconfig", "gitignore", "zshrc", "vim", "vimrc", "gemrc"]
 
 task :backup do
   olddir = File.expand_path(@olddir)
