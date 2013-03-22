@@ -56,11 +56,7 @@ end
 
 task :clean do
   FileUtils.rm_rf(File.expand_path(@olddir))
-  files = dir(dot(@files), "~")
-  files.each do |file|
-    FileUtils.rm_rf(file)
-  end
-  puts "Your dotfiles_old directory and all dotfiles to be replaced have been removed."
+  puts "Your dotfiles_old directory has been removed."
 end
 
 def dot(files)
