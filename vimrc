@@ -12,6 +12,10 @@ Bundle 'wincent/Command-T'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-bundler'
+Bundle 'tomtom/tcomment_vim'
 filetype plugin on
 " End Vundle
 
