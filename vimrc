@@ -8,7 +8,7 @@ call vundle#rc()
 " Vundle bundles
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/nerdtree'
+Bundle 'wincent/Command-T'
 filetype plugin on
 " End Vundle
 
@@ -27,22 +27,6 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-
-" Nerdtree
-autocmd vimenter * NERDTree
-let NERDTreeShowBookmarks=1
-let NERDTreeChDirMode=0
-let NERDTreeQuitOnOpen=0
-let NERDTreeMouseMode=2
-let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.pyc','\~$','\.swo$','\.swp$','\.git','\.hg','\.svn','\.bzr','.DS_Store']
-let NERDTreeKeepTreeInNewTab=1
-let g:nerdtree_tabs_open_on_gui_startup=0
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-function! CursorRight()
-    exe "normal \<c-w>\<c-w>"
-endfunction
-autocmd vimenter * call CursorRight()
 
 " Color Scheme
 set background=dark
