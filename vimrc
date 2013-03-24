@@ -11,6 +11,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'wincent/Command-T'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
 filetype plugin on
 " End Vundle
 
