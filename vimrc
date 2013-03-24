@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'wincent/Command-T'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'tpope/vim-repeat'
 filetype plugin on
 " End Vundle
 
