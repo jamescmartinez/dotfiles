@@ -9,6 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'wincent/Command-T'
+Bundle 'airblade/vim-gitgutter'
 filetype plugin on
 " End Vundle
 
@@ -31,5 +32,6 @@ set expandtab
 " Color Scheme
 set background=dark
 colorscheme solarized
+highlight clear SignColumn
 
 let mapleader=","
