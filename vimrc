@@ -31,3 +31,5 @@ set expandtab
 " Color Scheme
 set background=dark
 colorscheme solarized
+
+let mapleader=","
