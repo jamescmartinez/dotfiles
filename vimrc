@@ -28,6 +28,7 @@ set incsearch
 set ignorecase
 set cursorline
 set guifont=Monaco:h14
+set autochdir
 
 " Indentation
 set smartindent
