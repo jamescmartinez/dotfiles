@@ -21,7 +21,7 @@ filetype plugin on
 " End Vundle
 
 syntax on
-set number
+set relativenumber
 set hlsearch
 set showmatch
 set incsearch
