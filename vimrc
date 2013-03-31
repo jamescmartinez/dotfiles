@@ -30,6 +30,7 @@ set cursorline
 set guifont=Monaco:h14
 set autochdir
 set backspace=indent,eol,start
+set nowrap
 
 " Indentation
 set autoindent 
