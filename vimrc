@@ -31,6 +31,7 @@ set guifont=Monaco:h14
 set autochdir
 set backspace=indent,eol,start
 set nowrap
+set colorcolumn=80
 
 " Indentation
 set autoindent 
