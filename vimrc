@@ -31,7 +31,7 @@ set guifont=Monaco:h14
 set autochdir
 
 " Indentation
-set smartindent
+set autoindent 
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
