@@ -16,8 +16,8 @@ let mapleader=","
 set binary
 set noeol
 " Centralize backups, swapfiles, and undo history
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
+set backupdir=~/.vim/backup
+set directory=~/.vim/swap
 set undodir=~/.vim/undo
 " Enable relative line numbers
 set relativenumber
