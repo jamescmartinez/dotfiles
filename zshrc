@@ -12,3 +12,4 @@ bindkey -v
 # Aliases
 alias git=hub
 alias vi=mvim
+alias g=hub
