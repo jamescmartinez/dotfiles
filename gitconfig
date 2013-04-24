@@ -7,6 +7,7 @@
 	undo = reset --soft HEAD^
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	s = status
+  cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
 
 [core]
 	excludesfile = ~/.gitignore
