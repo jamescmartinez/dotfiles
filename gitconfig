@@ -43,7 +43,7 @@
   prune = true
 
 [help]
-	autocorrect = 50
+	autocorrect = 1
 
 [rerere]
 	enabled = 1
