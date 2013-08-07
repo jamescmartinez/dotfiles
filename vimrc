@@ -23,6 +23,8 @@ set undodir=~/.vim/undo
 syntax on
 " Highlight current line
 set cursorline
+" Line numbers
+set number
 " Automatically indent
 set autoindent 
 " Make tabs two spaces wide 
