@@ -19,8 +19,6 @@ set noeol
 set backupdir=~/.vim/backup
 set directory=~/.vim/swap
 set undodir=~/.vim/undo
-" Enable relative line numbers
-set relativenumber
 " Enable syntax highlighting
 syntax on
 " Highlight current line
