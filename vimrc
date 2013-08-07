@@ -59,8 +59,6 @@ set nowrap
 set showmode
 " Show the filename in the window titlebar
 set title
-" Automatically set working dir to current dir
-set autochdir
 " Show the (partial) command as it's being typed
 set showcmd
 " Set scrolling three lines before the horizontal window border
