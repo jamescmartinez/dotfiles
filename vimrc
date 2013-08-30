@@ -65,6 +65,15 @@ set showcmd
 set scrolloff=3
 " Set font
 set guifont=Monaco:h14
+" Reload files when changed on disk, i.e. via `git checkout`
+set autoread
+" Yank and paste with the system keyboard
+set clipboard=unnamed
+" Show trailing whitespace
+set list
+set listchars=tab:▸\ ,trail:▫
+" Close NERDTree when all other windows close
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Vundle
 " Filetype on and then off to fix Mac errors
@@ -84,6 +93,10 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-rake'
 Bundle 'tomtom/tcomment_vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
+Bundle 'vim-scripts/greplace.vim'
+Bundle 'tpope/vim-endwise'
 filetype plugin on
 " End Vundle
 
