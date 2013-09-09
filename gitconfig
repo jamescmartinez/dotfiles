@@ -1,52 +1,52 @@
 [user]
-	name = James Martinez
-	email = jamescmartinez@gmail.com
+  name = James Martinez
+  email = jamescmartinez@gmail.com
 
 [alias]
-	amend = commit --amend -C HEAD
-	undo = reset --soft HEAD^
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	s = status
+  amend = commit --amend -C HEAD
+  undo = reset --soft HEAD^
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  s = status
   cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
 
 [core]
-	excludesfile = ~/.gitignore
-	whitespace = trailing-space,space-before-tab
-	editor = mvim -f
+  excludesfile = ~/.gitignore
+  whitespace = trailing-space,space-before-tab
+  editor = mvim -f
 
 [color]
-	ui = 1
+  ui = 1
 [color "diff"]
-	whitespace = blue reverse
+  whitespace = blue reverse
 
 [merge]
-	tool = Kaleidoscope
+  tool = Kaleidoscope
 [mergetool]
-	keepBackup = false
-	prompt = false
+  keepBackup = false
+  prompt = false
 [mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
 
 [diff]
-	tool = Kaleidoscope
+  tool = Kaleidoscope
 [difftool]
-	prompt = false
+  prompt = false
 [difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
 [push]
-	default = simple
+  default = simple
 
 [pull]
-	rebase = true
+  rebase = true
   prune = true
 
 [help]
-	autocorrect = 1
+  autocorrect = 1
 
 [rerere]
-	enabled = 1
+  enabled = 1
 
 [github]
   user = jamescmartinez
