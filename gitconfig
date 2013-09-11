@@ -45,6 +45,9 @@
 [help]
   autocorrect = 1
 
+[branch]
+  autosetuprebase = always
+
 [rerere]
   enabled = 1
 
