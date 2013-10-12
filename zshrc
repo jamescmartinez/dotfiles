@@ -10,6 +10,9 @@ bindkey -v
 # Aliases
 alias vi=mvim
 alias g=git
+alias f=foreman
+alias fs='foreman s'
+alias fd='foreman s -f Procfile.dev'
 
 # Functions
 deploy() {
