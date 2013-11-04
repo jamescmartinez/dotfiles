@@ -53,7 +53,7 @@ set nostartofline
 set colorcolumn=80
 " Show the cursor position
 set ruler
-" Don't word wrap 
+" Don't word wrap
 set nowrap
 " Show the current mode
 set showmode
@@ -74,6 +74,8 @@ set list
 set listchars=tab:▸\ ,trail:▫
 " Close NERDTree when all other windows close
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" CtrlP mappings
+map <leader>t :CtrlP<CR>
 
 " Vundle
 " Filetype on and then off to fix Mac errors
@@ -84,7 +86,7 @@ call vundle#rc()
 " Vundle bundles
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'wincent/Command-T'
+Bundle 'kien/ctrlp.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'

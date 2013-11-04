@@ -50,9 +50,6 @@ task :install do
 
   puts "Installing Vundle bundles..."
   system("vim +BundleInstall +qall")
-  FileUtils.cd(File.expand_path("~/.vim/bundle/Command-T/")) do
-    system('zsh -i -c "rvm use system && rake make"')
-  end
   puts "...done."
 end
 
