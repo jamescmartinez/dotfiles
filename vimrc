@@ -2,10 +2,6 @@
 set nocompatible
 " Enhance command-line completion
 set wildmenu
-" Allow cursor keys in insert mode
-set esckeys
-" Allow backspace in insert mode
-set backspace=indent,eol,start
 " Optimize for fast terminal connections
 set ttyfast
 " Add the g flag to search/replace by default
@@ -26,8 +22,8 @@ set cursorline
 " Line numbers
 set number
 " Automatically indent
-set autoindent 
-" Make tabs two spaces wide 
+set autoindent
+" Make tabs two spaces wide
 set tabstop=2
 " Insert mode tabs
 set expandtab
@@ -45,8 +41,6 @@ set ignorecase
 set incsearch
 " Always show status line
 set laststatus=2
-" Enable mouse in all modes
-set mouse=a
 " Don't reset cursor to start of line when moving around
 set nostartofline
 " Set EOL color column
@@ -76,6 +70,15 @@ set listchars=tab:▸\ ,trail:▫
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " CtrlP mappings
 map <leader>t :CtrlP<CR>
+" Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 
 " Vundle
 " Filetype on and then off to fix Mac errors
@@ -100,7 +103,6 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/greplace.vim'
 Bundle 'tpope/vim-endwise'
 filetype plugin on
-" End Vundle
 
 " Color Scheme
 set background=dark
