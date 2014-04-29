@@ -10,6 +10,7 @@ bindkey -v
 # Aliases
 alias vi=mvim
 alias g=git
+alias fs='foreman s'
 alias fd='foreman s -f Procfile.dev'
 alias rc='foreman run rails c -f Procfile.dev'
 alias rdbm='rake db:migrate'
