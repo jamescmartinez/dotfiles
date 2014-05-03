@@ -25,4 +25,7 @@ deploy() {
 }
 
 # Path
-export PATH="/usr/local/bin:~/Development/android-sdk-macosx/tools:~/Development/android-sdk-macosx/platform-tools:/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/.rbenv/bin:~/Development/android-sdk-macosx/tools:~/Development/android-sdk-macosx/platform-tools:/usr/local/heroku/bin:$PATH"
+
+# rbenv
+eval "$(rbenv init -)"
