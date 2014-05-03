@@ -16,6 +16,7 @@ alias rc='foreman run rails c -f Procfile.dev'
 alias rdbm='rake db:migrate'
 alias rdbmt='rake db:migrate RAILS_ENV=test'
 alias rubo='rubocop -Ra'
+alias rdbw='rake db:drop db:create db:migrate db:seed'
 
 # Functions
 deploy() {
