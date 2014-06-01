@@ -17,6 +17,7 @@ alias rdbm='rake db:migrate'
 alias rdbmt='rake db:migrate RAILS_ENV=test'
 alias rubo='rubocop -Ra'
 alias rdbw='rake db:drop db:create db:migrate db:seed'
+alias hrdbw='heroku pg:reset DATABASE && heroku run rake db:migrate'
 
 # Functions
 deploy() {
