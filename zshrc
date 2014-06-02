@@ -8,7 +8,7 @@ source $ZSH/oh-my-zsh.sh
 bindkey -v
 
 # Aliases
-alias vi=mvim
+alias vi=atom
 alias g=git
 alias fs='foreman s'
 alias fd='foreman s -f Procfile.dev'
