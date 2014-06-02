@@ -1,0 +1,7 @@
+'welcome':
+  'showOnStartup': false
+'editor':
+  'showIndentGuide': true
+  'showInvisibles': true
+  'fontFamily': 'Menlo'
+  'fontSize': 15
