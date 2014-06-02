@@ -4,8 +4,14 @@ ZSH_THEME="robbyrussell"
 plugins=(git-flow)
 source $ZSH/oh-my-zsh.sh
 
-# Vim keybindings
-bindkey -v
+# Keybindings
+# To see the key combo you want to use just do:
+# cat > /dev/null
+# And press it
+bindkey '^A' beginning-of-line # control-a
+bindkey '^E' end-of-line # control-e
+bindkey '^[^[[D' backward-word # option-left
+bindkey '^[^[[C' forward-word # option-right
 
 # Aliases
 alias vi=atom
