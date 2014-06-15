@@ -1,7 +1,6 @@
 'packages': [
   'autocomplete-plus'
-  'linter'
-  'package-sync'
+  'parcel'
   'vim-mode'
   'atom-dark-syntax'
   'atom-dark-ui'
