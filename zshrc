@@ -32,8 +32,5 @@ deploy() {
   git push $1 $BRANCH:master
 }
 
-# Path
-export PATH="/usr/local/bin:$HOME/.rbenv/bin:/usr/local/heroku/bin:$PATH"
-
 # rbenv
 eval "$(rbenv init -)"
