@@ -16,6 +16,7 @@ bindkey '^[^[[C' forward-word # option-right
 # Aliases
 alias vi=atom
 alias g=git
+alias pg='postgres -D /usr/local/var/postgres'
 alias fs='foreman s'
 alias fd='foreman s -f Procfile.dev'
 alias rc='foreman run rails c -f Procfile.dev'
