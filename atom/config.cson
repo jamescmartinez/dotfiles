@@ -6,3 +6,5 @@
     'showInvisibles': true
     'fontFamily': 'Menlo'
     'fontSize': 15
+    'invisibles': {}
+  'core': {}
