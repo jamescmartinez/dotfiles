@@ -3,3 +3,5 @@ atom/packages
 atom/storage
 atom/themes
 atom/.node-gyp
+
+Gemfile.lock
