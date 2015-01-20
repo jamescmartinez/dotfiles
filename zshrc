@@ -33,5 +33,9 @@ deploy() {
   git push $1 $BRANCH:master
 }
 
+rn() {
+  rails new $1 -T --database=postgresql
+}
+
 # rbenv
 eval "$(rbenv init -)"
