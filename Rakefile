@@ -1,7 +1,7 @@
 require 'fileutils'
 
 @olddir = '~/dotfiles_old'
-@files = %w(gitconfig gitignore zshrc vim vimrc gemrc atom)
+@files = %w(gemrc gitconfig gitignore zshrc)
 
 task :backup do
   olddir = File.expand_path(@olddir)
@@ -44,13 +44,6 @@ task :install do
     puts "Creating symlink to \'" + original_file + "\'..."
     FileUtils.ln_s(original_file, file)
   end
-
-  puts 'Adding submodules...'
-  system('git submodule update --init')
-
-  puts 'Installing Vundle bundles...'
-  system('vim +BundleInstall +qall')
-  puts '...done.'
 end
 
 task :clean do

@@ -2,55 +2,16 @@
   name = James Martinez
   email = jamescmartinez@gmail.com
 
+[credential]
+  helper = osxkeychain
+
 [alias]
   amend = commit --amend -C HEAD
-  undo = reset --soft HEAD^
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  l = !git hist
-  changes = log --pretty=format:\"%h | %s%d [%an]\" --graph --date=short
   s = status
-  cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
 
 [core]
   excludesfile = ~/.gitignore
-  whitespace = trailing-space,space-before-tab
-  editor = atom -w
-
-[color]
-  ui = 1
-[color "diff"]
-  whitespace = blue reverse
-
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[diff]
-  tool = Kaleidoscope
-[difftool]
-  prompt = false
-
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustExitCode = true
-[mergetool]
-  prompt = false
-[merge]
-  tool = Kaleidoscope
 
 [push]
   default = simple
-
-[pull]
-  rebase = true
-  prune = true
-
-[help]
-  autocorrect = 1
-
-[branch]
-  autosetuprebase = always
-
-[rerere]
-  enabled = 0
-
-[github]
-  user = jamescmartinez
