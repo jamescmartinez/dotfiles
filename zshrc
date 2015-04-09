@@ -15,6 +15,8 @@ alias rubo='rubocop -Ra'
 alias rdbw='rake db:drop db:create db:migrate db:seed'
 alias hrdbw='heroku pg:reset DATABASE && heroku run rake db:migrate'
 alias rmdd='rm -rf ~/Library/Developer/Xcode/DerivedData/'
+alias b2d='boot2docker'
+alias b2ds='boot2docker start && eval "$(boot2docker shellinit)"'
 
 # Functions
 deploy() {
