@@ -1,3 +1,8 @@
+# oh my zsh
+ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="robbyrussell"
+source $ZSH/oh-my-zsh.sh
+
 # Aliases
 alias g=git
 alias pg='postgres -D /usr/local/var/postgres'
