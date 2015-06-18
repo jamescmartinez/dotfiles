@@ -26,3 +26,6 @@ deploy() {
 
 # rbenv
 eval "$(rbenv init -)"
+
+# GOPATH
+export GOPATH=$HOME/development/go
