@@ -29,3 +29,6 @@ eval "$(rbenv init -)"
 
 # GOPATH
 export GOPATH=$HOME/development/go
+
+# PATH
+export PATH=$GOPATH/bin:$PATH
