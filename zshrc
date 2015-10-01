@@ -27,6 +27,10 @@ deploy() {
 # rbenv
 eval "$(rbenv init -)"
 
+# nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # GOPATH
 export GOPATH=$HOME/development/go
 
