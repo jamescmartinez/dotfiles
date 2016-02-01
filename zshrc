@@ -17,6 +17,7 @@ alias hrdbw='heroku pg:reset DATABASE && heroku run rake db:migrate'
 alias rmdd='rm -rf ~/Library/Developer/Xcode/DerivedData/'
 alias b2d='boot2docker'
 alias b2ds='boot2docker start && eval "$(boot2docker shellinit)"'
+alias http='python -mSimpleHTTPServer'
 
 # Functions
 deploy() {
