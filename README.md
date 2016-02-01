@@ -1,7 +1,7 @@
 ~jamescmartinez
 ========
 
-_For my Mac Setup guide, click [here](https://gist.github.com/4390891)._
+_For my Mac Setup script/guide, click [here](https://github.com/jamescmartinez/machine)._
 
 This repository includes all of my custom dotfiles. This repository should be cloned to
 your home directory so that the path is `~/dotfiles/`. The included Rakefile creates symlinks from the dotfiles in your home directory to the dotfiles in the `~/dotfiles/` directory.
