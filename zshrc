@@ -16,6 +16,8 @@ alias rdbw='rake db:drop db:create db:migrate db:seed'
 alias hrdbw='heroku pg:reset DATABASE && heroku run rake db:migrate'
 alias rmdd='rm -rf ~/Library/Developer/Xcode/DerivedData/'
 alias http='python -mSimpleHTTPServer'
+alias drmc='docker rm $(docker ps -aq)'
+alias drmi='docker rmi $(docker images -aq)'
 
 # Functions
 deploy() {
