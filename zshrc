@@ -28,6 +28,9 @@ deploy() {
 # rbenv
 eval "$(rbenv init -)"
 
+# pyenv
+eval "$(pyenv init -)"
+
 # nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
