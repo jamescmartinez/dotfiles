@@ -22,3 +22,6 @@
 
 [rebase]
   autosquash = true
+
+[fetch]
+  prune = true
