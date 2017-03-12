@@ -1,7 +1,7 @@
 require 'fileutils'
 
 @olddir = '~/dotfiles_old'
-@files = %w(gemrc gitconfig gitignore railsrc zshrc)
+@files = %w(gemrc gitconfig gitignore railsrc vimrc zshrc)
 
 task :backup do
   olddir = File.expand_path(@olddir)

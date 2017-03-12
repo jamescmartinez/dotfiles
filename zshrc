@@ -18,12 +18,17 @@ alias rmdd='rm -rf ~/Library/Developer/Xcode/DerivedData/'
 alias http='python -m http.server'
 alias drmc='docker rm $(docker ps -aq)'
 alias drmi='docker rmi $(docker images -aq)'
+alias vim='nvim'
+alias vi='nvim'
 
 # Functions
 deploy() {
   BRANCH=$(git symbolic-ref --short -q HEAD)
   git push $1 $BRANCH:master
 }
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # rbenv
 eval "$(rbenv init -)"
