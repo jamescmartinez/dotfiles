@@ -1,0 +1,15 @@
+#!/bin/bash
+
+excludes=("bin" "README.md" ".DS_Store")
+
+script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+dotfiles_dir=$(dirname $script_dir)
+
+cd $dotfiles_dir
+
+for file in *; do
+  case "${excludes[@]}" in *"$file"*) continue; esac  
+  printf "Symlinking .$file..."
+  ln -sF $dotfiles_dir/$file "$HOME/.$file"
+  printf " done.\n"
+done
