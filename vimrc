@@ -6,16 +6,12 @@ Plug 'rakr/vim-one'
 call plug#end()
 
 " color scheme
-syntax enable
 set termguicolors
 colorscheme one
 set background=dark
 
 " tabs and indentation
-filetype indent on
-set autoindent
 set expandtab
-set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
