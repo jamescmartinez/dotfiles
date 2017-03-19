@@ -3,6 +3,8 @@
 This repository includes all of my custom dotfiles. This repository should be cloned to
 your home directory so that the path is `~/dotfiles/`. The included Rakefile creates symlinks from the dotfiles in your home directory to the dotfiles in the `~/dotfiles/` directory.
 
+For my macOS application list, [click here](https://github.com/jamescmartinez/dotfiles/wiki/macOS-Apps).
+
 Installation
 ------------
 ``` bash
