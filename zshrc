@@ -1,3 +1,7 @@
+# ZSH theme
+autoload -U promptinit; promptinit
+prompt pure
+
 # Aliases
 alias g=git
 alias pg='postgres -D /usr/local/var/postgres'
