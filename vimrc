@@ -20,7 +20,7 @@ set number " show line numbers
 set showcmd " show command in progress in bottom bar on right
 set cursorline " highlight current line
 set showmatch " highlight matching braces/parentheses
-set clipboard=unnamed " use the system clipboard
+set clipboard+=unnamedplus " use the system clipboard
 
 " maps
 nnoremap <C-p> :FZF<CR>
