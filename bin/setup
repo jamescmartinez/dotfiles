@@ -60,7 +60,8 @@ npm install --global pure-prompt
 /usr/local/opt/fzf/install
 
 # Install dotfiles
-rake backup install
+script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+$script_dir/dotfiles
 
 # Share .vim and .vimrc with Neovim
 mkdir ~/.config
