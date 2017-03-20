@@ -1,7 +1,11 @@
 # Oh My Zsh
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="robbyrussell"
+ZSH_THEME=""
 source $ZSH/oh-my-zsh.sh
+
+# Zsh Theme
+autoload -U promptinit; promptinit
+prompt pure
 
 # Aliases
 alias g=git
