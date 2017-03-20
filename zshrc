@@ -37,8 +37,8 @@ eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 
 # nvm
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
 # GOPATH
 export GOPATH=$HOME/development/go
