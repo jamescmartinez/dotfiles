@@ -47,5 +47,9 @@ export NVM_DIR="$HOME/.nvm"
 # GOPATH
 export GOPATH=$HOME/development/go
 
+# Editor Config
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
 # PATH
 export PATH=$GOPATH/bin:/usr/local/sbin:$PATH
