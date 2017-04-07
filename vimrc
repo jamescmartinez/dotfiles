@@ -21,6 +21,7 @@ set showcmd " show command in progress in bottom bar on right
 set cursorline " highlight current line
 set showmatch " highlight matching braces/parentheses
 set clipboard+=unnamedplus " use the system clipboard
+set exrc " load local .vimrc
 
 " maps
 nnoremap <C-p> :FZF<CR>
