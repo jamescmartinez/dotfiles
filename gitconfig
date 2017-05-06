@@ -8,6 +8,8 @@
 [alias]
   amend = commit --amend -C HEAD
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  p = push
+  pf = push --force-with-lease
   s = status
 
 [core]
