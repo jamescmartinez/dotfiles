@@ -11,7 +11,7 @@
   lt = !git l --simplify-by-decoration
   p = push
   pf = push --force-with-lease
-  s = status
+  s = status -sb
 
 [core]
   excludesfile = ~/.gitignore
