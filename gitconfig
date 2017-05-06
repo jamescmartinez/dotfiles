@@ -7,7 +7,8 @@
 
 [alias]
   amend = commit --amend -C HEAD
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  l = log --graph --pretty=\"format:%C(yellow)%h %C(green)%ar %C(cyan)%an %C(red)%d %C(reset)%s\"
+  lt = !git l --simplify-by-decoration
   p = push
   pf = push --force-with-lease
   s = status
