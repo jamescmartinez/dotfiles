@@ -6,7 +6,11 @@
   helper = osxkeychain
 
 [alias]
+  a = add
   amend = commit --amend -C HEAD
+  c = commit
+  co = checkout
+  d = diff
   l = log --graph --pretty=\"format:%C(yellow)%h %C(green)%ar %C(cyan)%an %C(red)%d %C(reset)%s\"
   lt = !git l --simplify-by-decoration
   p = push
