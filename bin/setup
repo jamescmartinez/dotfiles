@@ -9,6 +9,7 @@ brew update
 # Install binaries
 binaries=(
   zsh
+  zsh-completions
   git
   hub
   heroku-toolbelt

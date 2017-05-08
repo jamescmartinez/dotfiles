@@ -1,3 +1,6 @@
+# Zsh Completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+autoload -U compinit; compinit
 
 # Zsh Theme
 autoload -U promptinit; promptinit
