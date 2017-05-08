@@ -13,8 +13,9 @@
   d = diff
   l = log --graph --pretty=\"format:%C(yellow)%h %C(green)%ar %C(cyan)%an %C(red)%d %C(reset)%s\"
   lt = !git l --simplify-by-decoration
-  p = push
-  pf = push --force-with-lease
+  pl = pull
+  pu = push
+  puf = push --force-with-lease
   s = status -sb
 
 [core]
