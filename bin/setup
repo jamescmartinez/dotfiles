@@ -25,6 +25,9 @@ binaries=(
 )
 brew install "${binaries[@]}"
 
+# Set shell to Zsh
+chsh -s /usr/local/bin/zsh
+
 # Get latest Ruby version
 ruby_version="$(rbenv install -l | grep -v - | tail -1 | sed -e 's/^ *//')"
 # Install Ruby
@@ -56,9 +59,6 @@ npm install --global pure-prompt
 
 # Install fzf shell extensions
 /usr/local/opt/fzf/install
-
-# Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install dotfiles
 script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
