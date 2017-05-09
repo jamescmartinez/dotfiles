@@ -16,6 +16,7 @@
   pl = pull
   pu = push
   puf = push --force-with-lease
+  pup = !git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\"
   s = status -sb
 
 [core]
