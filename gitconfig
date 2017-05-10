@@ -14,6 +14,7 @@
   l = log --graph --pretty=\"format:%C(yellow)%h %C(green)%ar %C(cyan)%an %C(red)%d %C(reset)%s\"
   lt = !git l --simplify-by-decoration
   pl = pull
+  pr = pull-request
   pu = push
   puf = push --force-with-lease
   pup = !git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\"
