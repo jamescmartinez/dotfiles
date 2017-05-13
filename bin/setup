@@ -23,6 +23,7 @@ binaries=(
   fzf
   neovim/neovim/neovim
   tmux
+  yarn
 )
 brew install "${binaries[@]}"
 
