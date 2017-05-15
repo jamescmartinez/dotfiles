@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'rakr/vim-one'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " enable filetype detection
@@ -47,3 +48,4 @@ set showmatch " highlight matching braces/parentheses
 
 " maps
 nnoremap <C-p> :FZF<CR>
+map <C-n> :NERDTreeToggle<CR>
