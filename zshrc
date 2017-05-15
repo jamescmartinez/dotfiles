@@ -49,5 +49,8 @@ export GOPATH=$HOME/development/go
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# Zsh Syntax Highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # PATH
 export PATH=$GOPATH/bin:/usr/local/sbin:$PATH

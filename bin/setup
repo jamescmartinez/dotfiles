@@ -10,6 +10,7 @@ brew update
 binaries=(
   zsh
   zsh-completions
+  zsh-syntax-highlighting
   git
   hub
   heroku-toolbelt
