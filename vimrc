@@ -47,5 +47,7 @@ set showcmd " show command in progress in status line
 set showmatch " highlight matching braces/parentheses
 
 " maps
+" for a good explanation of all of the mapping commands go to:
+" http://stackoverflow.com/a/3776182/801858
 nnoremap <C-p> :FZF<CR>
 map <C-n> :NERDTreeToggle<CR>
