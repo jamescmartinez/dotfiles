@@ -21,9 +21,9 @@ binaries=(
   elixir
   pyenv
   fzf
-  neovim/neovim/neovim
   tmux
   yarn
+  vim
 )
 brew install "${binaries[@]}"
 
@@ -65,12 +65,6 @@ npm install --global pure-prompt
 # Install dotfiles
 script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 $script_dir/dotfiles
-
-# Share .vim and .vimrc with Neovim
-mkdir ~/.config
-mkdir ~/.vim
-ln -s ~/.vim ~/.config/nvim
-ln -s ~/.vimrc ~/.config/nvim/init.vim
 
 # Clean Homebrew
 brew cleanup

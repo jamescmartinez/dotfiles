@@ -21,8 +21,7 @@ alias rmdd='rm -rf ~/Library/Developer/Xcode/DerivedData/'
 alias http='python -m http.server'
 alias drmc='docker rm $(docker ps -aq)'
 alias drmi='docker rmi $(docker images -aq)'
-alias vim='nvim'
-alias vi='nvim'
+alias vi='vim'
 
 # Functions
 deploy() {
@@ -47,7 +46,7 @@ export NVM_DIR="$HOME/.nvm"
 export GOPATH=$HOME/development/go
 
 # Editor Config
-export VISUAL=nvim
+export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # PATH
