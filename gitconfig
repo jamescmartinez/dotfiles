@@ -7,7 +7,7 @@
 
 [alias]
   a = add
-  amend = commit --amend -C HEAD
+  amend = commit --amend -C HEAD --date=now
   c = commit
   co = checkout
   d = diff
