@@ -35,7 +35,7 @@ set splitright
 set autoindent " automatically indent
 set autoread " automatically check for file changes and refresh
 set backspace=indent,eol,start " enable backspace in insert mode
-set clipboard+=unnamedplus " use the system clipboard
+set clipboard^=unnamed " use the system clipboard
 set cursorline " highlight current line
 set exrc " load local .vimrc
 set hlsearch " highlight search results
