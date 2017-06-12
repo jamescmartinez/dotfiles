@@ -42,6 +42,7 @@ set hlsearch " highlight search results
 set incsearch " show search results while searching on every change
 set laststatus=2 " always show the status line
 set list listchars=tab:>·,trail:-,nbsp:+ " show tab, trail, and nbsp characters
+set nowrap " turn off word wrapping
 set ruler " show the cursor position in status line
 set showcmd " show command in progress in status line
 set showmatch " highlight matching braces/parentheses
