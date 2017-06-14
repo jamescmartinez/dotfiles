@@ -24,6 +24,7 @@ set textwidth=80
 set colorcolumn=+1
 
 " number gutter
+set relativenumber
 set number
 set numberwidth=5
 
