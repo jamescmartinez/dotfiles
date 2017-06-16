@@ -2,6 +2,9 @@
 fpath=(/usr/local/share/zsh-completions $fpath)
 autoload -U compinit; compinit
 
+# Enable 256 Colors
+export TERM=xterm-256color
+
 # Zsh Theme
 autoload -U promptinit; promptinit
 prompt pure
