@@ -4,6 +4,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'rakr/vim-one'
 Plug 'scrooloose/nerdtree'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 " enable filetype detection
@@ -52,9 +53,3 @@ set showmatch " highlight matching braces/parentheses
 " http://stackoverflow.com/a/3776182/801858
 nnoremap <C-p> :FZF<CR>
 map <C-n> :NERDTreeToggle<CR>
-
-" movement between splits
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
