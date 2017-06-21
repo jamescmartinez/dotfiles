@@ -53,3 +53,9 @@ set showmatch " highlight matching braces/parentheses
 " http://stackoverflow.com/a/3776182/801858
 nnoremap <C-p> :FZF<CR>
 map <C-n> :NERDTreeToggle<CR>
+
+" window movement
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
