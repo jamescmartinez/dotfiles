@@ -1,6 +1,3 @@
-# skip bundle
--B
-# skip Test::Unit
--T
-# preconfigure for PostgreSQL
 -d postgresql
+--skip-test
+--skip-bundle
