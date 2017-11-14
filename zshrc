@@ -38,9 +38,6 @@ deploy() {
 # asdf
 source /usr/local/opt/asdf/asdf.sh
 
-# rbenv
-eval "$(rbenv init -)"
-
 # pyenv
 eval "$(pyenv init -)"
 

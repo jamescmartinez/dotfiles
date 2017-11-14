@@ -16,8 +16,6 @@ binaries=(
   heroku/brew/heroku
   postgres
   openssl
-  rbenv
-  ruby-build
   nvm
   elixir
   pyenv
@@ -31,12 +29,15 @@ brew install "${binaries[@]}"
 # Set shell to Zsh
 chsh -s /usr/local/bin/zsh
 
-# Get latest Ruby version
-ruby_version="$(rbenv install -l | grep -v - | tail -1 | sed -e 's/^ *//')"
-# Install Ruby
-rbenv install "$ruby_version"
-# Set rbenv global Ruby version
-rbenv global "$ruby_version"
+
+# Get latest version of a language
+function latest_lang {
+  asdf list-all $1 | grep -v - | tail -1
+}
+
+# asdf for Ruby
+asdf plugin-add ruby
+asdf install ruby $(latest_lang ruby)
 
 # Load nvm
 mkdir ~/.nvm
