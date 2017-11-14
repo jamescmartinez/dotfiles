@@ -16,9 +16,7 @@ binaries=(
   heroku/brew/heroku
   postgres
   openssl
-  nvm
   elixir
-  pyenv
   fzf
   yarn
   vim
@@ -28,7 +26,6 @@ brew install "${binaries[@]}"
 
 # Set shell to Zsh
 chsh -s /usr/local/bin/zsh
-
 
 # Get latest version of a language
 function latest_lang {
