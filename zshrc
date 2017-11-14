@@ -35,6 +35,9 @@ deploy() {
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# asdf
+source /usr/local/opt/asdf/asdf.sh
+
 # rbenv
 eval "$(rbenv init -)"
 

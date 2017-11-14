@@ -24,6 +24,7 @@ binaries=(
   fzf
   yarn
   vim
+  asdf
 )
 brew install "${binaries[@]}"
 
