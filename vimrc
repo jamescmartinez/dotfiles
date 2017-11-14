@@ -32,6 +32,11 @@ set numberwidth=5
 set splitbelow
 set splitright
 
+" backup and swap
+set nobackup
+set nowritebackup
+set noswapfile
+
 " misc
 set autoindent " automatically indent
 set autoread " automatically check for file changes and refresh
