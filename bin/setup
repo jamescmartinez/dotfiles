@@ -43,12 +43,9 @@ asdf install ruby $(latest_lang ruby)
 asdf plugin-add nodejs
 asdf install nodejs $(latest_lang nodejs)
 
-# Get stable Python version
-python_version="3.6.0" # TODO: Make this dynamic
-# Install Python
-pyenv install "$python_version"
-# Set pyenv global Python version
-pyenv global "$python_version"
+# asdf for Python
+asdf plugin-add python
+asdf install python $(latest_lang python)
 
 # Install vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

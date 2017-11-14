@@ -38,9 +38,6 @@ deploy() {
 # asdf
 source /usr/local/opt/asdf/asdf.sh
 
-# pyenv
-eval "$(pyenv init -)"
-
 # GOPATH
 export GOPATH=$HOME/development/go
 
