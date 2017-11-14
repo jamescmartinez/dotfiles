@@ -40,6 +40,7 @@ set noswapfile
 " misc
 set autoindent " automatically indent
 set autoread " automatically check for file changes and refresh
+set autowrite " automatically write the file
 set backspace=indent,eol,start " enable backspace in insert mode
 set cursorline " highlight current line
 set exrc " load local .vimrc
