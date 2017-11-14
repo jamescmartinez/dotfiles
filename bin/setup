@@ -26,26 +26,19 @@ brew install "${binaries[@]}"
 # Set shell to Zsh
 chsh -s /usr/local/bin/zsh
 
-# Get latest version of a language
-function latest_lang {
-  asdf list-all $1 | grep -v - | tail -1
+# Install languages using asdf
+asdf_install_lang() {
+  local language=$1
+  local latest_version=$(asdf list-all $language | grep -v - | tail -1)
+  asdf plugin-add $language
+  asdf install $language $latest_version
+  asdf global $language $latest_version
 }
 
-# asdf for Ruby
-asdf plugin-add ruby
-asdf install ruby $(latest_lang ruby)
-
-# asdf for Node.js
-asdf plugin-add nodejs
-asdf install nodejs $(latest_lang nodejs)
-
-# asdf for Python
-asdf plugin-add python
-asdf install python $(latest_lang python)
-
-# asdf for Elixir
-asdf plugin-add elixir
-asdf install elixir $(latest_lang elixir)
+asdf_install_lang elixir
+asdf_install_lang nodejs
+asdf_install_lang python
+asdf_install_lang ruby
 
 # Install vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
