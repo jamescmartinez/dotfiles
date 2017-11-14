@@ -39,14 +39,9 @@ function latest_lang {
 asdf plugin-add ruby
 asdf install ruby $(latest_lang ruby)
 
-# Load nvm
-mkdir ~/.nvm
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-# Install Node
-nvm install node
-# Set nvm global Node version
-nvm alias default node
+# asdf for Node.js
+asdf plugin-add nodejs
+asdf install nodejs $(latest_lang nodejs)
 
 # Get stable Python version
 python_version="3.6.0" # TODO: Make this dynamic

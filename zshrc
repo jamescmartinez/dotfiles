@@ -41,10 +41,6 @@ source /usr/local/opt/asdf/asdf.sh
 # pyenv
 eval "$(pyenv init -)"
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
 # GOPATH
 export GOPATH=$HOME/development/go
 
