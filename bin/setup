@@ -22,7 +22,6 @@ binaries=(
   elixir
   pyenv
   fzf
-  tmux
   yarn
   vim
 )
