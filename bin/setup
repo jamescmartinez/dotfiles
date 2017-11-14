@@ -13,7 +13,7 @@ binaries=(
   zsh-syntax-highlighting
   git
   hub
-  heroku-toolbelt
+  heroku/brew/heroku
   postgres
   openssl
   rbenv
