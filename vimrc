@@ -7,9 +7,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'wincent/terminus'
 call plug#end()
 
-" enable filetype detection
-filetype plugin indent on
-
 " color scheme
 set termguicolors
 colorscheme one
@@ -39,19 +36,10 @@ set nowritebackup
 set noswapfile
 
 " misc
-set autoindent " automatically indent
-set autoread " automatically check for file changes and refresh
 set autowrite " automatically write the file
-set backspace=indent,eol,start " enable backspace in insert mode
 set cursorline " highlight current line
 set exrc " load local .vimrc
-set hlsearch " highlight search results
-set incsearch " show search results while searching on every change
-set laststatus=2 " always show the status line
-set list listchars=tab:>·,trail:-,nbsp:+ " show tab, trail, and nbsp characters
 set nowrap " turn off word wrapping
-set ruler " show the cursor position in status line
-set showcmd " show command in progress in status line
 set showmatch " highlight matching braces/parentheses
 
 " maps
@@ -65,3 +53,17 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" vim-only (not nvim)
+if !has('nvim')
+  filetype plugin indent on " enable filetype detection
+  set autoindent " automatically indent
+  set autoread " automatically check for file changes and refresh
+  set backspace=indent,eol,start " enable backspace in insert mode
+  set hlsearch " highlight search results
+  set incsearch " show search results while searching on every change
+  set laststatus=2 " always show the status line
+  set list listchars=tab:>·,trail:-,nbsp:+ " show tab, trail, and nbsp characters
+  set ruler " show the cursor position in status line
+  set showcmd " show command in progress in status line
+end

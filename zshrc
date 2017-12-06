@@ -24,7 +24,7 @@ alias rmdd='rm -rf ~/Library/Developer/Xcode/DerivedData/'
 alias http='python -m http.server'
 alias drmc='docker rm $(docker ps -aq)'
 alias drmi='docker rmi $(docker images -aq)'
-alias vi='vim'
+alias vi='nvim'
 
 # Functions
 deploy() {
@@ -42,7 +42,7 @@ source /usr/local/opt/asdf/asdf.sh
 export GOPATH=$HOME/development/go
 
 # Editor Config
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # Zsh Syntax Highlighting
