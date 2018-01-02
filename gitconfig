@@ -35,3 +35,6 @@
 
 [fetch]
   prune = true
+
+[diff]
+  colorMoved = zebra
