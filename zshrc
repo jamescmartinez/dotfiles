@@ -12,6 +12,7 @@ prompt pure
 # Aliases
 alias g=git
 alias pg='postgres -D /usr/local/var/postgres'
+alias rd='redis-server /usr/local/etc/redis.conf'
 alias fs='foreman s'
 alias fd='foreman s -f Procfile.dev'
 alias rc='foreman run rails c -f Procfile.dev'
