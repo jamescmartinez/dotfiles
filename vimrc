@@ -11,6 +11,7 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'w0rp/ale'
 call plug#end()
 
 " enable filetype detection
