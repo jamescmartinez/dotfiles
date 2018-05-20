@@ -5,6 +5,11 @@ Plug 'junegunn/fzf.vim'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'rakr/vim-one'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 call plug#end()
 
 " enable filetype detection
