@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'pbrisbin/vim-mkdir'
 Plug 'rakr/vim-one'
 Plug 'scrooloose/nerdtree'
 call plug#end()
