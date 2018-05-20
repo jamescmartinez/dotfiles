@@ -4,7 +4,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'rakr/vim-one'
 Plug 'scrooloose/nerdtree'
-Plug 'wincent/terminus'
 call plug#end()
 
 " color scheme
