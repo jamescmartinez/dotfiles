@@ -38,3 +38,6 @@ export EDITOR="$VISUAL"
 
 # Zsh Syntax Highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Path
+export PATH="$PATH:/`yarn global bin`"
