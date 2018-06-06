@@ -35,7 +35,7 @@ set textwidth=80
 set colorcolumn=+1
 
 " number gutter
-set relativenumber
+" set relativenumber
 set number
 set numberwidth=5
 
@@ -61,7 +61,7 @@ set noswapfile
 set autoread " automatically check for file changes and refresh
 set autowrite " automatically write the file
 set backspace=indent,eol,start " enable backspace in insert mode
-set cursorline " highlight current line
+" set cursorline " highlight current line
 set exrc " load local .vimrc
 set list listchars=tab:>·,trail:-,nbsp:+ " show tab, trail, and nbsp characters
 set nowrap " turn off word wrapping
