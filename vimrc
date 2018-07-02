@@ -61,6 +61,7 @@ set noswapfile
 set autoread " automatically check for file changes and refresh
 set autowrite " automatically write the file
 set backspace=indent,eol,start " enable backspace in insert mode
+set clipboard^=unnamed " adds system clipboard to vim clipboards
 " set cursorline " highlight current line
 set exrc " load local .vimrc
 set list listchars=tab:>·,trail:-,nbsp:+ " show tab, trail, and nbsp characters
