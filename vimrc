@@ -5,12 +5,12 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'rakr/vim-one'
+Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'tpope/vim-vinegar'
 Plug 'w0rp/ale'
 call plug#end()
 
@@ -72,6 +72,7 @@ set showmatch " highlight matching braces/parentheses
 " for a good explanation of all of the mapping commands go to:
 " http://stackoverflow.com/a/3776182/801858
 nnoremap <C-p> :FZF<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " window movement
 nnoremap <C-h> <C-w>h
