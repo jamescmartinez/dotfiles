@@ -8,9 +8,7 @@ brew update
 
 # Install binaries
 binaries=(
-  zsh
-  zsh-completions
-  zsh-syntax-highlighting
+  fish
   git
   hub
   heroku/brew/heroku
@@ -23,8 +21,9 @@ binaries=(
 )
 brew install "${binaries[@]}"
 
-# Set shell to Zsh
-chsh -s /usr/local/bin/zsh
+# Set shell to fish
+sudo sh -c "echo $(which fish) >> /etc/shells"
+chsh -s $(which fish)
 
 # Install languages using asdf
 asdf_install_lang() {
@@ -44,7 +43,7 @@ asdf_install_lang ruby
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install Pure Zsh prompt
-yarn global add pure-prompt
+# yarn global add pure-prompt
 
 # Install fzf shell extensions
 $(brew --prefix)/opt/fzf/install
