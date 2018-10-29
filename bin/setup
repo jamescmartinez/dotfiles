@@ -47,7 +47,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 yarn global add pure-prompt
 
 # Install fzf shell extensions
-/usr/local/opt/fzf/install
+$(brew --prefix)/opt/fzf/install
 
 # Install dotfiles
 script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
