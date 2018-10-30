@@ -53,7 +53,6 @@ asdf_install_lang() {
   asdf global $language $latest_version
 }
 
-asdf_install_lang elixir
 asdf_install_lang nodejs
 asdf_install_lang python
 asdf_install_lang ruby
