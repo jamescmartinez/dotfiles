@@ -49,6 +49,13 @@ asdf_install_lang() {
   local language=$1
   asdf plugin-add $language
   local latest_version=$(asdf list-all $language | grep -x '[0-9.]*' | tail -1)
+
+  if [ $language == "nodejs" ]
+  then
+    brew install gpg
+    $(brew --prefix)/opt/asdf/plugins/nodejs/bin/import-release-team-keyring
+  fi
+
   asdf install $language $latest_version
   asdf global $language $latest_version
 }
