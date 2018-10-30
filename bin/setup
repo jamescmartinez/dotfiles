@@ -26,6 +26,13 @@ brew install "${binaries[@]}"
 sudo sh -c "echo $(which fish) >> /etc/shells"
 chsh -s $(which fish)
 
+# Install Fisher
+curl https://git.io/fisher --create-dirs -sLo \
+  ~/.config/fish/functions/fisher.fish
+
+# Set fish prompt to Pure
+fisher add rafaelrinaldi/pure
+
 # Install fzf shell extensions
 $(brew --prefix)/opt/fzf/install
 
@@ -50,9 +57,6 @@ asdf_install_lang elixir
 asdf_install_lang nodejs
 asdf_install_lang python
 asdf_install_lang ruby
-
-# Install Pure Zsh prompt
-# yarn global add pure-prompt
 
 # Clean Homebrew
 brew cleanup
