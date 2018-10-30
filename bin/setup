@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Install Homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ruby -e "$(curl -fsSL \
+  https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Update Homebrew formulae
 brew update
@@ -25,6 +26,17 @@ brew install "${binaries[@]}"
 sudo sh -c "echo $(which fish) >> /etc/shells"
 chsh -s $(which fish)
 
+# Install fzf shell extensions
+$(brew --prefix)/opt/fzf/install
+
+# Install vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Install dotfiles
+script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+$script_dir/dotfiles
+
 # Install languages using asdf
 asdf_install_lang() {
   local language=$1
@@ -39,18 +51,8 @@ asdf_install_lang nodejs
 asdf_install_lang python
 asdf_install_lang ruby
 
-# Install vim-plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
 # Install Pure Zsh prompt
 # yarn global add pure-prompt
-
-# Install fzf shell extensions
-$(brew --prefix)/opt/fzf/install
-
-# Install dotfiles
-script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-$script_dir/dotfiles
 
 # Clean Homebrew
 brew cleanup
