@@ -18,7 +18,6 @@ binaries=(
   fzf
   yarn --without-node
   vim
-  asdf
 )
 brew install "${binaries[@]}"
 
@@ -44,7 +43,11 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 $script_dir/dotfiles
 
-# Install languages using asdf
+# Install asdf
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+
+# Install languages
+source ~/.asdf/asdf.sh
 asdf_install_lang() {
   local language=$1
   asdf plugin-add $language
@@ -53,7 +56,7 @@ asdf_install_lang() {
   if [ $language == "nodejs" ]
   then
     brew install gpg
-    $(brew --prefix)/opt/asdf/plugins/nodejs/bin/import-release-team-keyring
+    bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
   fi
 
   asdf install $language $latest_version

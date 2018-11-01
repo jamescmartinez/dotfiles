@@ -20,8 +20,7 @@ function deploy
 end
 
 # asdf
-set -x ASDF_DATA_DIR (brew --prefix)/opt/asdf
-source $ASDF_DATA_DIR/asdf.fish
+source ~/.asdf/asdf.fish
 
 # Editor Config
 set -x VISUAL vim
