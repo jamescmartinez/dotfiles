@@ -11,3 +11,7 @@ for file in $(find * -type f -not -path "bin*" -not -name "README.md"); do
   ln -sF $dotfiles_dir/$file "$HOME/.$file"
   printf " done.\n"
 done
+
+# Make VS Code load settings from the Linux settings path instead of the Mac
+# settings path.
+ln -sF "$HOME/.config/Code/User/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
