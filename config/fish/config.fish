@@ -25,6 +25,3 @@ source $ASDF_DATA_DIR/asdf.fish
 # Editor Config
 set -x VISUAL vim
 set -x EDITOR vim
-
-# PATH
-set -x PATH (yarn global bin) $PATH
