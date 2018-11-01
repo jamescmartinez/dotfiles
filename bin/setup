@@ -16,6 +16,7 @@ binaries=(
   postgres
   openssl
   fzf
+  yarn --without-node
   vim
   asdf
 )
