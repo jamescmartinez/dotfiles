@@ -59,6 +59,11 @@ asdf_install_lang() {
     bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
   fi
 
+  if [ $language == "python" ]
+  then
+    sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+  fi
+
   asdf install $language $latest_version
   asdf global $language $latest_version
 }
