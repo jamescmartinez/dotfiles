@@ -16,7 +16,6 @@ binaries=(
   postgres
   openssl
   fzf
-  yarn --without-node
   vim
 )
 brew install "${binaries[@]}"

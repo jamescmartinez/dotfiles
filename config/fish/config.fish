@@ -4,7 +4,6 @@ set fish_greeting
 # Aliases
 alias g='git'
 alias http='python -m http.server'
-alias npm='echo "Use `yarn` instead of `npm`."'
 alias pg='postgres -D /usr/local/var/postgres'
 alias rd='redis-server /usr/local/etc/redis.conf'
 alias rdbm='rake db:migrate'
@@ -25,6 +24,3 @@ source ~/.asdf/asdf.fish
 # Editor Config
 set -x VISUAL vim
 set -x EDITOR vim
-
-# PATH
-set -x PATH (yarn global bin) $PATH
