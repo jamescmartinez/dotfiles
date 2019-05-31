@@ -8,7 +8,7 @@ alias pg='postgres -D /usr/local/var/postgres'
 alias rd='redis-server /usr/local/etc/redis.conf'
 alias rdbm='rake db:migrate'
 alias rmdd='rm -rf ~/Library/Developer/Xcode/DerivedData/'
-alias rubo='rubocop -Ra'
+alias rubo='rubocop -a'
 alias v='vim'
 alias vi='vim'
 
