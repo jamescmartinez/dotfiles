@@ -6,5 +6,7 @@
   "editor.rulers": [80],
   "editor.tabSize": 2,
   "workbench.colorTheme": "One Dark Pro",
-  "workbench.statusBar.feedback.visible": false
+  "workbench.statusBar.feedback.visible": false,
+  "editor.largeFileOptimizations": false,
+  "breadcrumbs.enabled": true
 }
