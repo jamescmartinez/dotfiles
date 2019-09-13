@@ -19,7 +19,7 @@ function deploy
 end
 
 # asdf
-source ~/.asdf/asdf.fish
+source /usr/local/opt/asdf/asdf.fish
 
 # pyenv
 pyenv init - | source
