@@ -21,9 +21,6 @@ end
 # asdf
 source /usr/local/opt/asdf/asdf.fish
 
-# pyenv
-pyenv init - | source
-
 # Editor Config
 set -x VISUAL vim
 set -x EDITOR vim
