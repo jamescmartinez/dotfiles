@@ -2,6 +2,7 @@
 set fish_greeting
 
 # Aliases
+alias flushdns='sudo killall -HUP mDNSResponder'
 alias g='git'
 alias http='python -m http.server'
 alias pg='postgres -D /usr/local/var/postgres'
