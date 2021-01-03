@@ -10,5 +10,5 @@ Installation
 ------------
 ``` bash
 git clone git://github.com/jamescmartinez/dotfiles ~/dotfiles
-~/dotfiles/bin/symlink_dotfiles
+~/dotfiles/bin/setup
 ```
