@@ -1,19 +1,3 @@
-" plugins
-call plug#begin('~/.vim/plugged')
-Plug 'janko-m/vim-test'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'pbrisbin/vim-mkdir'
-Plug 'rakr/vim-one'
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
-Plug 'w0rp/ale'
-call plug#end()
-
 " enable filetype detection
 filetype plugin indent on
 
@@ -22,7 +6,7 @@ set autoindent
 
 " color scheme
 set termguicolors
-colorscheme one
+" colorscheme one
 set background=dark
 
 " tabs and indentation
@@ -35,7 +19,6 @@ set textwidth=80
 set colorcolumn=+1
 
 " number gutter
-" set relativenumber
 set number
 set numberwidth=5
 
@@ -62,7 +45,6 @@ set autoread " automatically check for file changes and refresh
 set autowrite " automatically write the file
 set backspace=indent,eol,start " enable backspace in insert mode
 set clipboard^=unnamed " adds system clipboard to vim clipboards
-" set cursorline " highlight current line
 set exrc " load local .vimrc
 set list listchars=tab:>·,trail:-,nbsp:+ " show tab, trail, and nbsp characters
 set nowrap " turn off word wrapping
