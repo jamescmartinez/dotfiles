@@ -22,6 +22,9 @@ end
 # asdf
 source /usr/local/opt/asdf/asdf.fish
 
+# Google Cloud
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
+
 # Editor Config
 set -x VISUAL vim
 set -x EDITOR vim
