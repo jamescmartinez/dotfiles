@@ -1,9 +1,13 @@
+[init]
+	defaultBranch = main
+
+[core]
+  autocrlf = input
+  excludesfile = ~/.gitignore
+
 [user]
   name = James Martinez
   email = jamescmartinez@gmail.com
-
-[credential]
-  helper = osxkeychain
 
 [alias]
   a = add
@@ -21,14 +25,13 @@
   pup = !git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\"
   s = status -sb
 
-[core]
-  excludesfile = ~/.gitignore
-
 [push]
   default = simple
 
+[pull]
+	rebase = true
+
 [merge]
-  tool = opendiff
   ff = only
 
 [rebase]
