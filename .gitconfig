@@ -1,5 +1,5 @@
 [init]
-	defaultBranch = main
+  defaultBranch = main
 
 [core]
   autocrlf = input
@@ -29,7 +29,7 @@
   default = simple
 
 [pull]
-	rebase = true
+  rebase = true
 
 [merge]
   ff = only
