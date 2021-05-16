@@ -2,6 +2,7 @@
 set fish_greeting
 
 # Aliases
+alias erbl='erblint --lint-all --autocorrect'
 alias flushdns='sudo killall -HUP mDNSResponder'
 alias g='git'
 alias http='python -m http.server'
