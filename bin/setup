@@ -7,7 +7,7 @@ cd $dotfiles_dir
 
 shopt -s dotglob # Enable `find` to see dotfiles in this directory
 
-for file in $(find * -type f -not -name ".DS_Store" -not -path ".git*" -not -path "bin*" -not -name "README.md"); do
+for file in $(find * -type f -not -name ".DS_Store" -not -path ".git/*" -not -path "bin/*" -not -name "README.md"); do
   printf "Symlinking $file..."
   mkdir -p "$HOME/$(dirname "$file")"
   ln -sF $dotfiles_dir/$file "$HOME/$file"
