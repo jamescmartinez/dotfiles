@@ -19,10 +19,7 @@ function deploy
 end
 
 # asdf
-source /usr/local/opt/asdf/asdf.fish
-
-# Google Cloud
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
+source (brew --prefix asdf)'/asdf.fish'
 
 # Editor Config
 set -x VISUAL vim
