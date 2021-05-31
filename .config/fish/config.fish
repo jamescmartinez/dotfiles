@@ -22,5 +22,5 @@ end
 source (brew --prefix asdf)'/asdf.fish'
 
 # Editor Config
-set -x VISUAL vim
-set -x EDITOR vim
+set -x VISUAL code --wait
+set -x EDITOR code --wait
