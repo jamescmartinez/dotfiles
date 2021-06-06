@@ -9,6 +9,7 @@ alias http='python -m http.server'
 alias rdbm='rake db:migrate'
 alias rmdd='rm -rf ~/Library/Developer/Xcode/DerivedData/'
 alias rubo='rubocop -A'
+alias tf='terraform'
 alias v='vim'
 alias vi='vim'
 
