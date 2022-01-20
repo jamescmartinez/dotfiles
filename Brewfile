@@ -5,5 +5,6 @@ brew "heroku/brew/heroku"
 brew "kubectl"
 brew "postgresql"
 brew "redis"
+brew "wget"
 
 cask "google-cloud-sdk"
