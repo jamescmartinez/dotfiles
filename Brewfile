@@ -6,5 +6,6 @@ brew "kubectl"
 brew "postgresql"
 brew "redis"
 brew "wget"
+brew "shellcheck"
 
 cask "google-cloud-sdk"
