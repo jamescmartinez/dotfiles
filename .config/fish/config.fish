@@ -19,6 +19,11 @@ function deploy
   git push $argv $branch:master
 end
 
+function kittyup
+  # https://sw.kovidgoyal.net/kitty/binary
+  curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+end
+
 # asdf
 source (brew --prefix asdf)'/asdf.fish'
 
