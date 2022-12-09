@@ -5,7 +5,7 @@ set fish_greeting
 alias g='git'
 
 # asdf
-source (brew --prefix asdf)'/asdf.fish'
+source (brew --prefix asdf)'/libexec/asdf.fish'
 
 # gcloud
 source (brew --prefix)'/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc'
