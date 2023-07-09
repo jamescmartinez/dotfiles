@@ -21,6 +21,7 @@ git clone git://github.com/jamescmartinez/dotfiles ~/dotfiles
    - `2606:4700:4700::1001`
 1. Enable FileVault
 1. Install Command Line Tools with `xcode-select --install`
+1. Enable Developer mode with `sudo DevToolsSecurity --enable`
 1. [Configure GitHub SSH](https://gist.github.com/jamescmartinez/a1f32830e57cf2a3fa62)
 1. Install dotfiles (instructions above)
 1. Install [Homebrew](https://brew.sh) and run `brew bundle --file ~/Brewfile` to install programs from the dotfiles-installed `Brewfile`
