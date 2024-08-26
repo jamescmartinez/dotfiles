@@ -4,6 +4,9 @@ set fish_greeting
 # Aliases
 alias g='git'
 
+# Kitty Update
+alias kittyup='curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin'
+
 # asdf
 source (brew --prefix asdf)'/libexec/asdf.fish'
 
