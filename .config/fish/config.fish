@@ -7,6 +7,9 @@ alias g='git'
 # Kitty Update
 alias kittyup='curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin'
 
+# Homebrew
+fish_add_path /opt/homebrew/sbin
+
 # asdf
 source (brew --prefix asdf)'/libexec/asdf.fish'
 
