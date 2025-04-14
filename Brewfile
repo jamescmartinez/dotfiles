@@ -9,13 +9,11 @@ brew "go-task"
 brew "golangci-lint"
 brew "kubernetes-cli"
 brew "mockery"
-brew "ngrok/ngrok/ngrok"
 brew "postgresql", restart_service: true
 brew "redis", restart_service: true
 brew "shellcheck"
 brew "terraform"
 brew "tfsec"
 brew "wget"
-brew "youtube-dl"
 
 cask "google-cloud-sdk"
