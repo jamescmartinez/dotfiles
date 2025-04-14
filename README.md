@@ -7,7 +7,7 @@ This repository includes my dotfiles.
 ## Dotfiles-only Setup
 
 ```bash
-git clone git://github.com/jamescmartinez/dotfiles ~/dotfiles
+git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 ~/dotfiles/bin/setup
 ```
 
