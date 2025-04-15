@@ -8,7 +8,7 @@ alias g='git'
 alias kittyup='curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin'
 
 # Homebrew
-fish_add_path (brew --prefix)/sbin
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # asdf
 # https://github.com/asdf-vm/asdf/issues/1346
