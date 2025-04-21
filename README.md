@@ -63,6 +63,7 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 - [kitty](https://github.com/kovidgoyal/kitty)
 - Loom
 - Notion
+- [Scroll Reverser](https://pilotmoon.com/scrollreverser) — to get both natural trackpad scrolling and reverse mouse scrolling; native settings do not support this as of macOS 15.4
 - Spotify
 - Visual Studio Code
 - Zoom
