@@ -56,14 +56,13 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 - Alfred
 - AppCleaner
 - Docker
-- Dropbox
 - Figma
 - Google Chrome
 - [KeyboardCleanTool](https://folivora.ai/keyboardcleantool)
 - [kitty](https://github.com/kovidgoyal/kitty)
 - Loom
 - Notion
-- [Scroll Reverser](https://pilotmoon.com/scrollreverser) — to get both natural trackpad scrolling and reverse mouse scrolling; native settings do not support this as of macOS 15.4
+- [Scroll Reverser](https://pilotmoon.com/scrollreverser) — separate natural scrolling settings for mouse & trackpad (still needed as of macOS 15)
 - Spotify
 - Visual Studio Code
 - Zoom
