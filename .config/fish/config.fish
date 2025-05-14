@@ -15,6 +15,10 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 fish_add_path -m (brew --prefix asdf)/bin
 fish_add_path -m $HOME/.asdf/shims
 
+# Volta
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
+
 # gcloud
 source (brew --prefix)'/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc'
 
