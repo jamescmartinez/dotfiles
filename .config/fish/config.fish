@@ -12,10 +12,8 @@ alias kittyup='curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/st
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # asdf
-# https://github.com/asdf-vm/asdf/issues/1346
-# source (brew --prefix asdf)'/libexec/asdf.fish'
-fish_add_path (brew --prefix asdf)/bin
-fish_add_path $HOME/.asdf/shims
+fish_add_path -m (brew --prefix asdf)/bin
+fish_add_path -m $HOME/.asdf/shims
 
 # gcloud
 source (brew --prefix)'/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc'
