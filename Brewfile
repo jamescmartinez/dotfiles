@@ -1,6 +1,7 @@
 brew "asdf"
 brew "atlas"
 brew "awscli"
+brew "common-fate/granted/granted"
 brew "driftctl"
 brew "fish"
 brew "gh"
