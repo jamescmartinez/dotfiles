@@ -15,6 +15,7 @@ brew "redis", restart_service: true
 brew "shellcheck"
 brew "terraform"
 brew "tfsec"
+brew "tlrc"
 brew "wget"
 
 cask "google-cloud-sdk"
