@@ -16,6 +16,7 @@ brew "shellcheck"
 brew "terraform"
 brew "tfsec"
 brew "tlrc"
+brew "uv"
 brew "wget"
 
 cask "google-cloud-sdk"
