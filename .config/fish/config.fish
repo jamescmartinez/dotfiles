@@ -14,10 +14,6 @@ alias kittyup='curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/st
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# asdf
-fish_add_path -m (brew --prefix asdf)/bin
-fish_add_path -m $HOME/.asdf/shims
-
 # Volta
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
