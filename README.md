@@ -57,9 +57,10 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 - AppCleaner
 - Docker
 - Figma
+- [ghostty](https://ghostty.org)
 - Google Chrome
 - [KeyboardCleanTool](https://folivora.ai/keyboardcleantool)
-- [kitty](https://github.com/kovidgoyal/kitty)
+- [kitty](https://github.com/kovidgoyal/kitty) - deprecated in favor of ghostty
 - Loom
 - Notion
 - [Scroll Reverser](https://pilotmoon.com/scrollreverser) — separate natural scrolling settings for mouse & trackpad (still needed as of macOS 15)
