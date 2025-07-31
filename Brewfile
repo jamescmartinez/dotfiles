@@ -1,7 +1,7 @@
 brew "asdf"
-brew "atlas"
 brew "awscli"
 brew "common-fate/granted/granted"
+brew "dbmate"
 brew "driftctl"
 brew "fish"
 brew "gh"
@@ -10,13 +10,13 @@ brew "go-task"
 brew "golangci-lint"
 brew "kubernetes-cli"
 brew "mockery"
-brew "postgresql", restart_service: true
+brew "postgresql@14", restart_service: true
 brew "redis", restart_service: true
+brew "repomix"
 brew "shellcheck"
 brew "terraform"
 brew "tfsec"
 brew "tlrc"
+brew "tree"
 brew "uv"
 brew "wget"
-
-cask "google-cloud-sdk"
