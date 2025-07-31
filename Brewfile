@@ -1,3 +1,4 @@
+brew "act"
 brew "asdf"
 brew "awscli"
 brew "common-fate/granted/granted"
