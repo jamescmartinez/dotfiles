@@ -13,6 +13,7 @@ brew "golangci-lint"
 brew "kubernetes-cli"
 brew "mise"
 brew "mockery"
+brew "ollama"
 brew "postgresql@14", restart_service: :changed
 brew "redis", restart_service: :changed
 brew "repomix"
