@@ -14,10 +14,6 @@ alias kittyup='curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/st
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Volta
-set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
-
 # Editor Config
 set -x VISUAL code --wait
 set -x EDITOR code --wait
