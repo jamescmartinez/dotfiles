@@ -65,7 +65,7 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 - [kitty](https://github.com/kovidgoyal/kitty) - deprecated in favor of ghostty
 - Loom
 - Notion
-- [Scroll Reverser](https://pilotmoon.com/scrollreverser) — separate natural scrolling settings for mouse & trackpad (still needed as of macOS 15)
+- [Scroll Reverser](https://pilotmoon.com/scrollreverser) — still needed as of macOS 15
 - Spotify
 - Visual Studio Code
 - Zoom
