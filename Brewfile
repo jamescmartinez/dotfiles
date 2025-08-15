@@ -14,7 +14,7 @@ brew "mise"
 brew "mockery"
 brew "ollama"
 brew "poppler"
-brew "postgresql@14", restart_service: :changed
+brew "postgresql@17", restart_service: :changed
 brew "redis", restart_service: :changed
 brew "repomix"
 brew "shellcheck"
