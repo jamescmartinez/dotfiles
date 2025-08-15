@@ -55,6 +55,8 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 - 1Password
 - Alfred
 - AppCleaner
+- [CleanShot X](https://cleanshot.com)
+- [Deckset](https://www.deckset.com)
 - Docker
 - Figma
 - [ghostty](https://ghostty.org)
