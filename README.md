@@ -1,6 +1,6 @@
 # ~jamescmartinez
 
-This repository includes my dotfiles.
+This repository includes my dotfiles and macOS Setup Guide.
 
 - _Have a suggestion? Please [create an issue](https://github.com/jamescmartinez/dotfiles/issues/new)!_
 
