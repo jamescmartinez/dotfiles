@@ -20,7 +20,6 @@
   lt = !git l --simplify-by-decoration
   pl = pull
   pr = pull-request
-  promote-main-to-production = !git co main && git pull && git co production && git pull && git rebase main && git push && git co main
   pu = push
   puf = push --force-with-lease
   pup = !git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\"
