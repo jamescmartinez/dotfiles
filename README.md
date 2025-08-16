@@ -2,8 +2,6 @@
 
 This repository includes my dotfiles and macOS Setup Guide.
 
-- _Have a suggestion? Please [create an issue](https://github.com/jamescmartinez/dotfiles/issues/new)!_
-
 ## Dotfiles-only Setup
 
 ```bash
@@ -20,20 +18,20 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 1. Install dotfiles (instructions above)
 1. Install [Homebrew](https://brew.sh) and run `brew bundle --file ~/Brewfile` to install programs from `~/Brewfile`
    - Dump current Brewfile: `brew bundle dump --file Brewfile.dump`
-   - Make system match Brewfile: `brew bundle --force cleanup`
+   - Uninstall all dependencies not in the Brewfile: `brew bundle cleanup --force`
 1. Set fish as the default shell with:
    ```sh
-   # Intel
-   echo /usr/local/bin/fish | sudo tee -a /etc/shells
-   chsh -s /usr/local/bin/fish
    # Apple M
    echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
    chsh -s /opt/homebrew/bin/fish
+   # Intel
+   echo /usr/local/bin/fish | sudo tee -a /etc/shells
+   chsh -s /usr/local/bin/fish
    ```
 1. Restart so the default shell change takes effect
 1. Install [Fisher](https://github.com/jorgebucaran/fisher) and run `fisher update` to install plugins from `~/.config/fish/fish_plugins`
    - If `fisher update` does not install the plugins, it's probably because fisher replaced the symlink with a new `fish_plugins` file upon installation. Quick fix: run a `git reset` on `~/dotfiles` and run `fisher update` again.
-1. Use `dns_cloudflare` fish alias to set DNS servers to [Cloudflare DNS](https://1.1.1.1/dns); use `dns_default` to revert this as-needed (e.g. when unable to access captive portal) and `dns_list` to list the current DNS servers.
+1. Use `dns_cloudflare` fish alias to set DNS servers to [Cloudflare DNS](https://1.1.1.1/dns). Use `dns_default` to revert this as-needed (e.g. when unable to access captive portal), and `dns_list` to list the current DNS servers.
    - `1.1.1.1`
    - `1.0.0.1`
    - `2606:4700:4700::1111`
