@@ -40,13 +40,7 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 
 ## Apps
 
-#### Install from App Store
-
-- Amphetamine
-- Gifox
-- Magnet
-- Slack
-- Todoist
+> Note: Mac App Store apps are now installed and managed by the Brewfile.
 
 #### Install from website
 

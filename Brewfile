@@ -10,6 +10,7 @@ brew "git"
 brew "go-task"
 brew "golangci-lint"
 brew "kubernetes-cli"
+brew "mas"
 brew "mise"
 brew "mockery"
 brew "ollama", restart_service: :changed
@@ -25,3 +26,8 @@ brew "uv"
 brew "wget"
 brew "common-fate/granted/granted"
 brew "hashicorp/tap/terraform"
+mas "Amphetamine", id: 937984704
+mas "CleanMyMac", id: 1339170533
+mas "Magnet", id: 441258766
+mas "Slack", id: 803453959
+mas "Todoist", id: 585829637
