@@ -14,6 +14,9 @@ alias kittyup='curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/st
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# mise
+mise activate fish | source
+
 # Editor Config
 set -x VISUAL code --wait
 set -x EDITOR code --wait
