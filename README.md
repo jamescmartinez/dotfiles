@@ -17,8 +17,8 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 1. [Configure GitHub SSH](https://gist.github.com/jamescmartinez/a1f32830e57cf2a3fa62)
 1. Install dotfiles (instructions above)
 1. Install [Homebrew](https://brew.sh) and run `brew bundle --file ~/Brewfile` to install programs from `~/Brewfile`
-   - Dump current Brewfile: `brew bundle dump --file Brewfile.dump`
-   - Uninstall all dependencies not in the Brewfile: `brew bundle cleanup --force`
+   - Dump current Brewfile: `brew bundle dump -f --no-vscode --file ~/Brewfile`
+   - Uninstall all dependencies not in the Brewfile: `brew bundle cleanup -f --file ~/Brewfile`
 1. Set fish as the default shell with:
    ```sh
    # Apple M
