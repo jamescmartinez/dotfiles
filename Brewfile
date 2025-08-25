@@ -12,7 +12,7 @@ brew "golangci-lint"
 brew "kubernetes-cli"
 brew "mise"
 brew "mockery"
-brew "ollama"
+brew "ollama", restart_service: :changed
 brew "poppler"
 brew "postgresql@17", restart_service: :changed
 brew "redis", restart_service: :changed
