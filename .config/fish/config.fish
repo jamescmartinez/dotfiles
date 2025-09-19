@@ -10,6 +10,7 @@ alias dns_flush='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder' 
 alias g='git'
 alias glci='golangci-lint'
 alias kittyup='curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin' # Update Kitty
+alias source_fish_config='source ~/.config/fish/config.fish'
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
