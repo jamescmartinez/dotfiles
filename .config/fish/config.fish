@@ -20,3 +20,6 @@ mise activate fish | source
 # Editor Config
 set -x VISUAL code --wait
 set -x EDITOR code --wait
+
+# OrbStack
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
