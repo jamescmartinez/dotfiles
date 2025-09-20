@@ -1,3 +1,5 @@
+font-size = 14
+
 # theme (ported from https://github.com/sindresorhus/hyper-snazzy)
 background = "#282a36"
 foreground = "#eff0eb"
