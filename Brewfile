@@ -24,6 +24,7 @@ brew "tlrc"
 brew "tree"
 brew "uv"
 brew "wget"
+brew "yt-dlp"
 brew "common-fate/granted/granted"
 brew "hashicorp/tap/terraform"
 mas "Amphetamine", id: 937984704
