@@ -5,6 +5,7 @@ brew "awscli"
 brew "colima", restart_service: :changed
 brew "dbmate"
 brew "docker"
+brew "docker-compose"
 brew "driftctl"
 brew "fish"
 brew "gh"
