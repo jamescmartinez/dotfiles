@@ -22,7 +22,6 @@ brew "postgresql@17", restart_service: :changed
 brew "redis", restart_service: :changed
 brew "repomix"
 brew "shellcheck"
-brew "tfsec"
 brew "tlrc"
 brew "tree"
 brew "uv"
