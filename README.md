@@ -44,20 +44,24 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 
 #### Install from website
 
-- 1Password
-- Alfred
-- AppCleaner
+- [1Password](https://1password.com)
+- ~[Alfred](https://www.alfredapp.com)~ - deprecated in favor of Raycast
+- [AppCleaner](https://freemacsoft.net/appcleaner)
+- [ChatGPT](https://chatgpt.com/download)
 - [CleanShot X](https://cleanshot.com)
 - [Deckset](https://www.deckset.com)
-- Docker
-- Figma
+- ~[Docker](https://docs.docker.com/desktop/setup/install/mac-install)~ - deprecated in favor of `colima`
+- [Figma](https://www.figma.com/downloads)
 - [ghostty](https://ghostty.org)
-- Google Chrome
+- [Google Chrome](https://www.google.com/chrome)
 - [KeyboardCleanTool](https://folivora.ai/keyboardcleantool)
-- [kitty](https://github.com/kovidgoyal/kitty) - deprecated in favor of ghostty
-- Loom
-- Notion
+- ~[kitty](https://github.com/kovidgoyal/kitty)~ - deprecated in favor of ghostty
+- [LinearMouse](https://linearmouse.app)
+- [Loom](https://www.loom.com/download)
+- [Notion](https://www.notion.com/desktop)
+- [Raycast](https://www.raycast.com)
 - [Scroll Reverser](https://pilotmoon.com/scrollreverser) — still needed as of macOS 15
-- Spotify
-- Visual Studio Code
-- Zoom
+- [Spotify](https://www.spotify.com/us/download/mac)
+- [Stats](https://mac-stats.com)
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- [Zoom](https://zoom.us/download)
