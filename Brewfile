@@ -17,13 +17,10 @@ brew "mas"
 brew "mise"
 brew "mockery"
 brew "ollama", restart_service: :changed
-brew "postgresql@17", restart_service: :changed
-brew "redis", restart_service: :changed
 brew "repomix"
 brew "shellcheck"
 brew "tlrc"
 brew "tree"
-brew "uv"
 brew "wget"
 brew "yt-dlp"
 brew "common-fate/granted/granted"
