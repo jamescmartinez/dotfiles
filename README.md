@@ -56,11 +56,11 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 - [Google Chrome](https://www.google.com/chrome)
 - [KeyboardCleanTool](https://folivora.ai/keyboardcleantool)
 - ~[kitty](https://github.com/kovidgoyal/kitty)~ - deprecated in favor of ghostty
-- [LinearMouse](https://linearmouse.app)
+- ~[LinearMouse](https://linearmouse.app)~ - deprecated, no longer needed as of macOS 26
 - [Loom](https://www.loom.com/download)
 - [Notion](https://www.notion.com/desktop)
 - [Raycast](https://www.raycast.com)
-- [Scroll Reverser](https://pilotmoon.com/scrollreverser) — still needed as of macOS 15
+- [Scroll Reverser](https://pilotmoon.com/scrollreverser) - still needed as of macOS 26
 - [Spotify](https://www.spotify.com/us/download/mac)
 - [Stats](https://mac-stats.com)
 - [Visual Studio Code](https://code.visualstudio.com/download)
