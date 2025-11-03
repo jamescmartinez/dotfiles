@@ -1,0 +1,4 @@
+# Disable bind mounting the Docker Engine socket into the job container for
+# Colima compatibility
+# https://github.com/nektos/act/issues/2239
+--container-daemon-socket -
