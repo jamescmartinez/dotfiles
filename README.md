@@ -13,6 +13,19 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 
 1. Enable network firewall
 1. Enable FileVault
+1. Set up Finder
+   - Delete all .DS_Store files, printing success and redirecting stderr to /dev/null
+     ```sh
+     find / -name ".DS_Store" -type f -print -delete 2>/dev/null
+     killall Finder
+     ```
+   - Open Finder, go to top level dir (e.g., "James's MacBook Pro"), and set the following defaults:
+     - Always open in list view
+     - Browse in list view
+     - Group by "Name"
+     - Sort by "Name"
+     - Use as Defaults
+   - Repeat the last step for every directory in the Finder sidebar where this setting did not apply (usually Desktop, iCloud Drive, Trash, and a few others)
 1. Install Command Line Tools with `xcode-select --install`
 1. [Configure GitHub SSH](https://gist.github.com/jamescmartinez/a1f32830e57cf2a3fa62)
 1. Install dotfiles (instructions above)
