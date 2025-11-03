@@ -23,7 +23,7 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
      - Always open in list view
      - Browse in list view
      - Group by "Name"
-     - Sort by "Name"
+     - Sort by "Name" (except Downloads - set that to "Date Added")
      - Use as Defaults
    - Repeat the last step for every directory in the Finder sidebar where this setting did not apply (usually Desktop, iCloud Drive, Trash, and a few others)
 1. Install Command Line Tools with `xcode-select --install`
