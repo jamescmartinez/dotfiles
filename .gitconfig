@@ -13,6 +13,7 @@
   a = add
   amend = commit --amend -C HEAD --date=now
   c = commit
+  cl = clean -fdx
   co = checkout
   d = diff
   de = diff -- \":(exclude)package-lock.json\"
