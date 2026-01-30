@@ -1,3 +1,4 @@
+tap "anomalyco/tap"
 tap "common-fate/granted"
 tap "hashicorp/tap"
 brew "act"
@@ -24,6 +25,7 @@ brew "tlrc"
 brew "tree"
 brew "wget"
 brew "yt-dlp"
+brew "anomalyco/tap/opencode"
 brew "common-fate/granted/granted"
 brew "hashicorp/tap/terraform"
 mas "Amphetamine", id: 937984704
