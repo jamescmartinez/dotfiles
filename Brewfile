@@ -1,6 +1,7 @@
 tap "anomalyco/tap"
 tap "common-fate/granted"
 tap "hashicorp/tap"
+tap "steipete/tap"
 brew "act"
 brew "awscli"
 brew "colima", restart_service: :changed
