@@ -25,4 +25,4 @@ set -x VISUAL 'code --wait'
 set -x EDITOR 'code --wait'
 
 # Add ~/.local/bin to $PATH
-export PATH="$HOME/.local/bin:$PATH"
+fish_add_path -p $HOME/.local/bin
