@@ -14,6 +14,7 @@
   amend = commit --amend -C HEAD --date=now
   c = commit
   cl = clean -fdx
+  cleanup = !git branch | grep -vE \"^[* ] (main|master)$\" | xargs git branch -D
   co = checkout
   d = diff
   de = diff -- \":(exclude)package-lock.json\"
@@ -25,7 +26,6 @@
   puf = push --force-with-lease
   pup = !git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\"
   s = status -sb
-  cleanup = !git branch | grep -vE \"^[* ] (main|master)$\" | xargs git branch -D
 
 [push]
   default = simple
