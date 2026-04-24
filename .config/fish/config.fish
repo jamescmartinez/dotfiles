@@ -21,8 +21,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 mise activate fish | source
 
 # Editor Config
-set -x VISUAL code --wait
-set -x EDITOR code --wait
+set -x VISUAL 'code --wait'
+set -x EDITOR 'code --wait'
 
 # Add ~/.local/bin to $PATH
 export PATH="$HOME/.local/bin:$PATH"
