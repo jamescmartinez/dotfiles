@@ -25,6 +25,7 @@
   puf = push --force-with-lease
   pup = !git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\"
   s = status -sb
+  cleanup = !git branch | grep -vE \"^[* ] (main|master)$\" | xargs git branch -D
 
 [push]
   default = simple
