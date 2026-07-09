@@ -11,6 +11,6 @@ shopt -s dotglob # Enable `find` to see dotfiles in this directory
 while IFS= read -r -d '' file; do
   printf "Symlinking %s..." "$file"
   mkdir -p "$HOME/$(dirname "$file")"
-  ln -sF "$dotfiles_dir/$file" "$HOME/$file"
+  ln -sfn "$dotfiles_dir/$file" "$HOME/$file"
   printf " done.\n"
 done < <(find . -type f -not -name ".DS_Store" -not -path "./.git/*" -not -path "./bin/*" -not -name "README.md" -print0)
