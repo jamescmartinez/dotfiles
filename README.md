@@ -40,6 +40,9 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
    # Intel
    echo /usr/local/bin/fish | sudo tee -a /etc/shells
    chsh -s /usr/local/bin/fish
+   # Linux
+   echo /home/linuxbrew/.linuxbrew/bin/fish | sudo tee -a /etc/shells
+   chsh -s /home/linuxbrew/.linuxbrew/bin/fish
    ```
 1. Restart so the default shell change takes effect
 1. Install [Fisher](https://github.com/jorgebucaran/fisher) and run `fisher update` to install plugins from `~/.config/fish/fish_plugins`

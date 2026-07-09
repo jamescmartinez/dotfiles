@@ -15,7 +15,9 @@ alias kittyup='curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/st
 alias source_fish_config='source ~/.config/fish/config.fish'
 
 # Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+test -x /opt/homebrew/bin/brew; and eval (/opt/homebrew/bin/brew shellenv) # Apple M
+test -x /usr/local/bin/brew; and eval (/usr/local/bin/brew shellenv) # Intel
+test -x /home/linuxbrew/.linuxbrew/bin/brew; and eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv) # Linux
 
 # mise
 mise activate fish | source
