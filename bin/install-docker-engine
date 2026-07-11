@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
+curl -fsSL https://get.docker.com | bash
+
+# run `docker` without `sudo`
+# https://docs.docker.com/engine/install/linux-postinstall
+sudo usermod -aG docker $USER

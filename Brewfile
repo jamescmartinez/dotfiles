@@ -3,7 +3,7 @@ tap "common-fate/granted"
 tap "hashicorp/tap"
 brew "act"
 brew "awscli"
-brew "colima", restart_service: :changed
+brew "colima", restart_service: :changed if OS.mac? # for Linux, run `bin/install-docker-engine`
 brew "dbmate"
 brew "docker"
 brew "docker-compose"
