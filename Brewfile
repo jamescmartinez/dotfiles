@@ -5,8 +5,8 @@ brew "act"
 brew "awscli"
 brew "colima", restart_service: :changed if OS.mac? # for Linux, run `bin/install-docker-engine`
 brew "dbmate"
-brew "docker"
-brew "docker-compose"
+brew "docker" if OS.mac?
+brew "docker-compose" if OS.mac?
 brew "driftctl"
 brew "ffmpeg"
 brew "fish"
