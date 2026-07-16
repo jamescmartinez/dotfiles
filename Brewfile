@@ -10,6 +10,7 @@ brew "docker-compose" if OS.mac?
 brew "driftctl"
 brew "ffmpeg"
 brew "fish"
+brew "fisher"
 brew "gh"
 brew "git"
 brew "go-task"
