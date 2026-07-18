@@ -27,9 +27,14 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
      - Use as Defaults
    - Repeat the last step for every directory in the Finder sidebar where this setting did not apply (usually Desktop, iCloud Drive, Trash, and a few others)
 1. Install Command Line Tools with `xcode-select --install`
-1. [Configure GitHub SSH](https://gist.github.com/jamescmartinez/a1f32830e57cf2a3fa62)
+1. Install [Homebrew](https://brew.sh) and run `brew install gh`
+1. Configure GitHub SSH and commit signing:
+   ```sh
+   gh auth login --git-protocol ssh
+   gh ssh-key add ~/.ssh/id_ed25519.pub --type signing
+   ```
 1. Install dotfiles (instructions above)
-1. Install [Homebrew](https://brew.sh) and run `brew bundle --file ~/Brewfile` to install programs from `~/Brewfile`
+1. Run `brew bundle --file ~/Brewfile` to install programs from `~/Brewfile`
    - Dump current Brewfile: `brew bundle dump -f --no-go --no-vscode --file ~/Brewfile`
    - Uninstall all dependencies not in the Brewfile: `brew bundle cleanup -f --file ~/Brewfile`
 1. Set fish as the default shell with:

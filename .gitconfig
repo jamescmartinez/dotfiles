@@ -8,6 +8,13 @@
 [user]
   name = James Martinez
   email = jamescmartinez@gmail.com
+  signingKey = ~/.ssh/id_ed25519
+
+[gpg]
+  format = ssh
+
+[commit]
+  gpgSign = true
 
 [alias]
   a = add
