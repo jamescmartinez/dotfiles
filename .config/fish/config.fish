@@ -26,5 +26,10 @@ mise activate fish | source
 set -x VISUAL 'code --wait'
 set -x EDITOR 'code --wait'
 
+# Browser Config
+if set -q WSL_DISTRO_NAME
+    set -x BROWSER explorer.exe # default browser (e.g., Chrome)
+end
+
 # Add ~/.local/bin to $PATH
 fish_add_path -p $HOME/.local/bin
