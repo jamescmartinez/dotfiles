@@ -1,8 +1,9 @@
-tap "anomalyco/tap"
-tap "common-fate/granted"
-tap "hashicorp/tap"
+tap "anomalyco/tap", trusted: { formulae: ["opencode"] }
+tap "common-fate/granted", trusted: { formulae: ["granted"] }
+tap "hashicorp/tap", trusted: { formulae: ["terraform"] }
 brew "act"
 brew "awscli"
+brew "btop"
 brew "colima", restart_service: :changed if OS.mac? # for Linux, run `bin/install-docker-engine`
 brew "dbmate"
 brew "docker" if OS.mac?
@@ -26,9 +27,7 @@ brew "tlrc"
 brew "tree"
 brew "wget"
 brew "yt-dlp"
-brew "anomalyco/tap/opencode", trusted: true
-brew "common-fate/granted/granted", trusted: true
-brew "hashicorp/tap/terraform", trusted: true
+cask "codex"
 mas "Amphetamine", id: 937984704 if OS.mac?
 mas "Magnet", id: 441258766 if OS.mac?
 mas "Slack", id: 803453959 if OS.mac?
