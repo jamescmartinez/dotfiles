@@ -37,6 +37,7 @@ git clone git@github.com:jamescmartinez/dotfiles.git ~/dotfiles
 1. Run `brew bundle --file ~/Brewfile` to install programs from `~/Brewfile`
    - Dump current Brewfile: `brew bundle dump -f --no-cargo --no-describe --no-go --no-npm --no-uv --no-vscode --no-winget --file ~/Brewfile`
    - Uninstall all dependencies not in the Brewfile: `brew bundle cleanup -f --file ~/Brewfile`
+1. (macOS only) Run `brew info docker-compose` and follow its caveats to enable `docker compose`.
 1. Set fish as the default shell with:
    ```sh
    # Apple M
