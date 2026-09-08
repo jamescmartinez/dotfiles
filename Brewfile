@@ -1,6 +1,6 @@
-tap "anomalyco/tap", trusted: { formulae: ["opencode"] }
-tap "common-fate/granted", trusted: { formulae: ["granted"] }
-tap "hashicorp/tap", trusted: { formulae: ["terraform"] }
+tap "anomalyco/tap"
+tap "common-fate/granted"
+tap "hashicorp/tap"
 brew "act"
 brew "awscli"
 brew "btop"
@@ -27,6 +27,9 @@ brew "tlrc"
 brew "tree"
 brew "wget"
 brew "yt-dlp"
+brew "anomalyco/tap/opencode", trusted: true
+brew "common-fate/granted/granted", trusted: true
+brew "hashicorp/tap/terraform", trusted: true
 cask "codex"
 mas "Amphetamine", id: 937984704 if OS.mac?
 mas "Magnet", id: 441258766 if OS.mac?
