@@ -4,6 +4,7 @@ set fish_greeting
 # Aliases
 alias aptu='sudo apt update && sudo apt upgrade'
 alias assume='source (brew --prefix)/bin/assume.fish'
+alias brewu='brew update && brew upgrade'
 alias cddev='cd ~/Development'
 alias dns_cloudflare='networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001' # Use Cloudflare DNS servers
 alias dns_default='networksetup -setdnsservers Wi-Fi Empty' # Remove custom DNS servers
