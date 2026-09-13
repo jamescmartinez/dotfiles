@@ -23,7 +23,6 @@ brew "mockery"
 brew "ollama", restart_service: :changed
 brew "repomix"
 brew "shellcheck"
-brew "tailscale"
 brew "tlrc"
 brew "tree"
 brew "wget"
