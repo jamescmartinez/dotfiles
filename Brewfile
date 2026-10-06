@@ -31,6 +31,7 @@ brew "yt-dlp"
 brew "anomalyco/tap/opencode", trusted: true
 brew "common-fate/granted/granted", trusted: true
 brew "hashicorp/tap/terraform", trusted: true
+cask "appcleaner"
 cask "codex"
 cask "codexbar"
 mas "Amphetamine", id: 937984704 if OS.mac?
