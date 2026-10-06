@@ -37,3 +37,4 @@ mas "Amphetamine", id: 937984704 if OS.mac?
 mas "Magnet", id: 441258766 if OS.mac?
 mas "Slack", id: 803453959 if OS.mac?
 mas "Todoist", id: 585829637 if OS.mac?
+mas "Xcode", id: 497799835 if OS.mac?
