@@ -27,6 +27,7 @@ brew "shellcheck"
 brew "tlrc"
 brew "tree"
 brew "wget"
+brew "whisper.cpp"
 brew "yt-dlp"
 brew "anomalyco/tap/opencode", trusted: true
 brew "common-fate/granted/granted", trusted: true
