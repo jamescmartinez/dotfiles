@@ -32,9 +32,9 @@ brew "yt-dlp"
 brew "anomalyco/tap/opencode", trusted: true
 brew "common-fate/granted/granted", trusted: true
 brew "hashicorp/tap/terraform", trusted: true
-cask "appcleaner"
+cask "appcleaner" if OS.mac?
 cask "codex"
-cask "codexbar"
+cask "codexbar" if OS.mac?
 mas "Amphetamine", id: 937984704 if OS.mac?
 mas "Magnet", id: 441258766 if OS.mac?
 mas "Slack", id: 803453959 if OS.mac?
